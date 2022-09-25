@@ -1,16 +1,16 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.7
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Sep 25, 2022 at 04:29 AM
--- Server version: 10.3.36-MariaDB-cll-lve
--- PHP Version: 7.4.30
+-- Host: 127.0.0.1
+-- Generation Time: Sep 25, 2022 at 11:35 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
+
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wiztievc_lotus_db`
+-- Database: `wizteozs_lotusint`
 --
 
 -- --------------------------------------------------------
@@ -149,6 +149,7 @@ INSERT INTO `challans` (`id`, `c_name`, `c_number`, `c_address`, `delivery_addre
 (110, 'Dr. Mohammad Musfiqur Rahman', '01924792746 , 01877338644', '5A darul Huda, New Applo Road Vatara , Dhaka.', '', '', '110', '110', NULL, '2022-01-13', 'Omar Faruk', 'Mahadi', 'Mahadi', '', '', '2022-01-15 03:23:00', '2022-01-13 21:24:08'),
 (111, 'Rowshan Ara', '01739829405 ,01712214130', 'Road-14 ,Block -B ,House-10 ,Mirpur-10 Dhaka-1216', '', '', '111', '111', NULL, '2022-01-17', 'Customer', 'Mahadi', 'Mahadi', '', '', '2022-01-17 17:42:42', '2022-01-17 17:42:42'),
 (112, 'Mamun', '01769009152', 'Rajanigandha Officers Quarter, Kafrul, Dhaka.', '', '', '112', '112', NULL, '2022-01-17', 'Customer', 'Mahadi', 'Mahadi', '', '', '2022-01-17 18:49:33', '2022-01-17 18:49:33'),
+(113, 'Mostofa', '01833333373 , 01740903020', 'East Baish Taki, Kafrul, Dhaka.', '', '', '113', '113', NULL, '2022-01-20', 'Customer', 'Mahadi', 'Mahadi', '', '', '2022-01-20 19:34:34', '2022-01-20 19:34:34'),
 (114, 'Syed Mazharul Islam', '01765590232 ,01926837802', '742/1 ,Middle Monipur ,Mirpur-2 ,Dhaka-1216', '', '', '114', '114', NULL, '2022-01-21', 'Customer', 'Mahadi', 'Mahadi', '', '', '2022-01-21 11:26:35', '2022-01-21 11:26:35'),
 (116, 'Md. Ashiqul Islam', '01675844466 , 01716572531', '75/A/1 Jonaki Road, Paikpara, Mirpur-1, Dhaka.', '', '', '116', '116', NULL, '2022-01-22', 'Zashim', 'Mahadi', 'Mahadi', '', '', '2022-01-22 18:36:12', '2022-01-22 18:36:12'),
 (117, 'Sweety Rahman', '01710922022 , 01762525697', '253/B, Taj Lane Middle Paikpara, Mirpur-1, Dhaka-1216', '', '', '117', '117', NULL, '2022-01-23', 'Zashim', 'Mahadi', 'Mahadi', '', '', '2022-01-23 17:19:53', '2022-01-23 17:19:53'),
@@ -370,12 +371,10 @@ INSERT INTO `challans` (`id`, `c_name`, `c_number`, `c_address`, `delivery_addre
 (682, 'Azim Ahmed', '01826667582 , 01868012686', '12/3 Tolarbag, Flat - 4B, Mirpur- 1, Dhaka.', 'Azim Ahmed. 12/3 Tolarbag, Flat - 4B, Mirpur- 1, Dhaka. 01826667582 , 01868012686', 'Challan No - DC-DH-22-004220', '460', '465', '', '2022-08-18', 'Faisal Ahmed Hridoy', 'Sarker Mahadi Lotus', '', 'HO-22-012565', 'LI-MR1-22-898', '2022-08-18 12:17:59', '2022-08-18 12:17:59'),
 (683, 'Shakil Khandokar', '01611419641 , 01877309116', 'House no: 51, S A Khaleque R/A, Darus Salam, Dhaka.', 'Shakil Khandokar. House no: 51, S A Khaleque R/A, Darus Salam, Dhaka. 01611419641 , 01877309116', 'DC-DH-22-003156', '461', '466', '', '2022-08-18', 'Hafizul', 'Sarker Mahadi Lotus', '03', '22-009084', 'LI-MR1-22-900', '2022-08-18 19:59:28', '2022-08-18 19:59:28'),
 (689, 'Md. Sajib', '01712697066 , 01680836595', 'House no: 44, Darus Salam, Mirpur, Dhaka.', 'Md. Sajib. House no: 44, Darus Salam, Mirpur, Dhaka. 01712697066 , 01680836595.', 'Challan No - DC-DH-22-004437', '462', '472', '', '2022-08-20', 'Faisal Ahmed Hridoy', 'Sarker Mahadi Lotus', '', '22-009940', 'LI-MR1-22-901', '2022-08-20 13:24:00', '2022-08-20 15:54:33'),
-(692, 'Golam Moula', '01917218414 , 01675703885', 'House no: 26, Road no: 2, Block: F, Section-2, Mirpur, Dhaka.', '', 'DC-KHW-21-000118', '463', '473', '', '2022-09-11', 'Omar Faruk', 'Sarker Mahadi Lotus', '02', '21-012282', 'LI-MR1-22-902', '2022-09-11 14:16:31', '2022-09-11 14:16:31'),
-(694, 'Mostofa', '01833333373 / 01740903020', 'East Baish Taki, Kafrul, Dhaka.', '', 'Esquire Challan No: DH-DC-22-00160', '463', '474', '', '2022-09-22', 'Customer', 'Sarker Mahadi Lotus', 'Customer', '22-000956', 'LI-MR1-22-292', '2022-01-20 19:34:34', '2022-09-22 16:17:42'),
-(696, 'Md. Hasan Mahmud', '01712891308 / 01571770186', 'House no: 01, Flat# 3B (3rd Floor), Road no: 05, Block: G1, Section - 02, Mirpur, Dhaka.', '', '', '464', '476', '', '2022-09-23', 'Hafizul', 'Sarker Mahadi Lotus', '03', '22-009083', 'LI-MR1-22-922', '2022-09-23 14:19:00', '2022-09-23 14:51:11'),
-(697, 'S. M Shaheed', '01823294586 / 01711174774', '36/10 Shah Ali Bagh, Mirpur-1, Dhaka.', '', 'Challan No - DC-DH-22-002868', '465', '477', '', '2022-09-24', 'Hafizul', 'Sarker Mahadi Lotus', '03', '22-007402', 'LI-MR1-22-923', '2022-09-24 11:31:23', '2022-09-24 11:31:23'),
-(715, 'Md. Fazlur Rahman', '01552459355 / 01704679757', '17/6/1 Tolarbag (2 No Gate), Mirpur-1, Dhaka.', '', 'Challan No - DC-DH-22-003857', '466', '478', '', '2022-09-24', 'Omar Faruk', 'Sarker Mahadi Lotus', '02', '22-007402', 'LI-MR1-22-925', '2022-09-24 17:55:10', '2022-09-24 17:55:10'),
-(717, 'Md. Azizur Rahman', '01712722141 / 01670791670', '31/3 shenpara Pabata, Mirpur-10, Dhaka.', '', 'Esquire Challan no - DC-DH-22-000557', '467', '480', '', '2022-09-25', 'Farid', 'Sarker Mahadi Lotus', '13-6969', '22-002068', 'LI-MR1-22-926', '2022-09-25 10:12:21', '2022-09-25 10:13:22');
+(693, 'Kazi Azharul Islam', '01766189495 , 01746389096', 'Building No: 5, Flat No: 12B, Government Officers Apertment Complex, Mirpur- 2, Dhaka.', '', '', '463', '474', '', '2022-08-27', 'Hafizul', 'Sarker Mahadi Lotus', '03', '22-002068', 'LI-MR1-22-894', '2022-08-27 09:38:17', '2022-08-27 10:24:59'),
+(695, 'Salim Shahied', '01715491246 , 01713047717', 'House no: 148/1, Road no: 5, Kallyanpur, Mirpur, Dhaka.', 'Salim Shahied. House no: 148/1, Road no: 5, Kallyanpur, Mirpur, Dhaka. 01715491246 , 01713047717', '', '464', '476', '', '2022-08-27', 'Hafizul', 'Sarker Mahadi Lotus', '01', '21-2768', 'LI-MR1-22-895', '2022-08-27 14:28:01', '2022-08-27 14:28:21'),
+(697, 'Md. Almas Uddin', '01712131322 , 01626221300', 'House no -16, Darus salam, Mirpur, Dhaka-1216', '', 'DC-DH-22-003857', '465', '478', '', '2022-08-31', 'Hafizul', 'Sarker Mahadi Lotus', '03', '22-007402', 'LI-MR1-22-900', '2022-08-31 18:36:05', '2022-08-31 18:36:37'),
+(698, 'Rayhan Islam', '01722851736 , 01759339422', 'Teachers Studio Appartement, Daffodil International University, Daffodil Smart City (DSC), Ashulia, Dhaka-1341.', '', '', '466', '479', '', '2022-09-03', 'Hafizul', 'Sarker Mahadi Lotus', '3', '22-004690', 'LI-MR1-22-905', '2022-09-03 16:27:54', '2022-09-03 16:27:54');
 
 -- --------------------------------------------------------
 
@@ -500,6 +499,7 @@ INSERT INTO `challan_items` (`id`, `challan_id`, `product_name`, `product_model`
 (129, 110, 'Sharp Deep Freezer', 'SJC-328', 'Gray', NULL, 3, '', NULL, '2022-01-13 21:24:08', '2022-01-13 21:24:08'),
 (130, 111, 'Sharp Micro Wave Oven', 'R-84A0', '(ST)V', '102411445', 1, '', NULL, '2022-01-17 17:42:42', '2022-01-17 17:42:42'),
 (131, 112, 'Sharp Electric Oven', 'EO-42K', NULL, '1421030091', 1, '', NULL, '2022-01-17 18:49:33', '2022-01-17 18:49:33'),
+(132, 113, 'Sharp Micro Wave Oven', 'R-72A0', '(SM)V', '111411250', 1, '', NULL, '2022-01-20 19:34:34', '2022-01-20 19:34:34'),
 (133, 114, 'Sharp Micro Wave Oven', 'R-72A1', '(SM)V', '111411261', 1, '', NULL, '2022-01-21 11:26:35', '2022-01-21 11:26:35'),
 (135, 116, 'Sharp Deep Freezer', 'SJC-228', 'GY', '2021042598', 1, '', NULL, '2022-01-22 18:36:12', '2022-01-22 18:36:12'),
 (136, 117, 'Sharp Deep Frezzer', 'SJC-218', 'WH', '2021040280', 1, '', NULL, '2022-01-23 17:19:53', '2022-01-23 17:19:53'),
@@ -752,12 +752,10 @@ INSERT INTO `challan_items` (`id`, `challan_id`, `product_name`, `product_model`
 (724, 682, 'General Wall Inverter Type', 'ASGG12CPTA-V', NULL, 'T003396', 1, 'Set', 'AOGG12CPTA - T003369', '2022-08-18 12:17:59', '2022-08-18 12:17:59'),
 (725, 683, 'SHARP Deep Freezer', 'SJC228', 'Gray', '2022030148', 1, 'Pcs', NULL, '2022-08-18 19:59:28', '2022-08-18 19:59:28'),
 (731, 689, 'SHARP Split AC', 'AHA18ZEVE', '', '21000708', 1, 'Set', 'AUA18ZEVE - 26000695', '2022-08-20 15:54:33', '2022-08-20 15:54:33'),
-(734, 692, 'SHARP Deep Freezer', 'SJC218', 'White', '2021030723', 1, 'Pcs', NULL, '2022-09-11 14:16:31', '2022-09-11 14:16:31'),
-(736, 694, 'SHRAP Micro Wave Oven', 'R-72A0(SM)V', '', '111411250', 1, 'Pcs', '', '2022-09-22 16:17:42', '2022-09-22 16:17:42'),
-(738, 696, 'SHARP Deep Freezer', 'SJC188', 'Black', '2022030372', 1, 'Pcs', '', '2022-09-23 14:51:11', '2022-09-23 14:51:11'),
-(739, 697, 'SHARP Deep Freezer', 'SJC228', 'Gray', '2022010066', 1, 'Pcs', NULL, '2022-09-24 11:31:23', '2022-09-24 11:31:23'),
-(740, 715, 'SHARP Deep Freezer', 'SJC178', 'Gray', '2022021465', 1, 'Pcs', NULL, '2022-09-24 17:55:10', '2022-09-24 17:55:10'),
-(742, 717, 'SHARP Refrigerator', 'SJEX375E', 'Silver', 'B 211202459', 1, 'Pcs', '', '2022-09-25 10:13:22', '2022-09-25 10:13:22');
+(735, 693, 'SHARP Washing Machine', 'ESW80EWH', '', 'L000093', 1, 'Pcs', '', '2022-08-27 10:24:59', '2022-08-27 10:24:59'),
+(737, 695, 'General Wall Type', 'ASGA18FUTB', '', 'K007841', 1, '1 Set', 'AOGA18FUTB - T009930', '2022-08-27 14:28:21', '2022-08-27 14:28:21'),
+(739, 697, 'SHARP Deep Freezer', 'SJC228', 'Gray', '2022030658', 1, 'Pcs', '', '2022-08-31 18:36:37', '2022-08-31 18:36:37'),
+(740, 698, 'SHARP Refrigerator', 'SJESB621X', 'Black', NULL, 1, 'Pcs', NULL, '2022-09-03 16:27:54', '2022-09-03 16:27:54');
 
 -- --------------------------------------------------------
 
@@ -1054,6 +1052,7 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (289, 'Rowshan Ara', NULL, '01739829405 ,01712214130', 'Road-14 ,Block -B ,House-10 ,Mirpur-10 Dhaka-1216', '', '', '', '', '', '', '', '289', 16900, 0, 0, 16900, 0, '2022-01-17 17:39:08', '2022-01-17 17:39:08'),
 (290, 'Mamun', NULL, '01769009152', 'Rajanigandha Officers Quarter, Kafrul, Dhaka.', '', '', '', '', '', '', '', '290', 10900, 0, 0, 10900, 0, '2022-01-17 18:43:19', '2022-01-17 18:43:19'),
 (291, 'Director, National Botanical Garden', NULL, '01850131650 , 01716398004', 'National Botanical Garden, Mirpur-1, Dhaka-1216', '', '', '', '', '', '', '', '291', 20500, 0, 0, 20500, 0, '2022-01-20 19:05:35', '2022-01-20 19:05:35'),
+(292, 'Mostofa', NULL, '01833333373 , 01740903020', 'East Baish Taki, Kafrul, Dhaka.', '', '', '', '', '', '', '', '292', 12900, 0, 0, 12900, 0, '2022-01-20 19:31:40', '2022-01-20 19:31:40'),
 (293, 'Syed Mazharul Islam', NULL, '01765590232 ,01926837802', '742/1 ,Middle Monipur ,Mirpur-2 ,Dhaka-1216', '', '', '', '', '', '', '', '293', 11000, 0, 0, 11000, 0, '2022-01-21 11:23:03', '2022-01-21 11:23:03'),
 (294, 'Md.Shamim', NULL, '01704892434', 'House no: 97, Road no: 08, Janata Housing, Mirpur, Dhaka', '', '', '', '', '', '', '', '294', 21900, 0, 0, 21900, 0, '2022-01-21 20:06:35', '2022-01-21 20:06:35'),
 (295, 'Md. Ashiqul Islam', NULL, '01675844466 , 01716572531', '75/A/1 Jonaki Road, Paikpara, Mirpur-1, Dhaka', '', '', '', '', '', '', '', '295', 36900, 0, 0, 36900, 0, '2022-01-22 18:02:06', '2022-01-22 18:02:06'),
@@ -1121,9 +1120,9 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (372, 'Mostofa', NULL, '017168020304 , 01715578204', '97/Kha-10- Shinnirtek, Uttar Bishil, Mirpur-1, Dhaka-1216', '', '', '', '', '', '', '', '371', 88500, 0, 0, 88500, 0, '2021-07-15 19:25:00', '2022-02-20 14:25:59'),
 (374, 'Al-Amin', NULL, '01759465627 , 01778202335', 'Flat-B7, House- 6, Road- 1, Block- C, Mirpur- 2, Dhaka-1216.', '', '', '', '', '', '', '', '373', 27900, 0, 0, 27900, 0, '2021-07-20 20:04:00', '2022-02-20 15:07:08'),
 (375, 'Shetu', NULL, '01710019544, 01318661593', 'Kalwalapara, Buriganga Building, Mirpur-1, Dhaka-1216', '', '', '', '', '', '', '', '375', 13900, 0, 0, 13900, NULL, '2022-02-22 11:01:09', '2022-02-22 11:01:09'),
-(376, 'Abdus Salam', NULL, '01715055071, 01731638328', 'House No- 06, Road No- 5, Block No-E, Mirpur-2, Dhaka-1216', '', '', '', '', '', '', '', '376', 32900, 0, 0, 32900, 0, '2022-02-22 17:48:09', '2022-02-22 17:48:09'),
-(377, 'Abdus Salam', NULL, '01715055071 , 01731638328', 'House No- 06, Road No- 5, Block No-E, Mirpur-2, Dhaka-1216', '', '', '', '', '', '', '', '377', 5800, 0, 0, 5800, 0, '2022-02-22 18:06:40', '2022-02-22 18:06:40');
+(376, 'Abdus Salam', NULL, '01715055071, 01731638328', 'House No- 06, Road No- 5, Block No-E, Mirpur-2, Dhaka-1216', '', '', '', '', '', '', '', '376', 32900, 0, 0, 32900, 0, '2022-02-22 17:48:09', '2022-02-22 17:48:09');
 INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_name`, `cp_number`, `cp_address`, `narration`, `relational_manager`, `guarantee_card_no`, `po_ref_no`, `invoice`, `total_amount`, `discount`, `discounted_price`, `paid_amount`, `due_amount`, `created_at`, `updated_at`) VALUES
+(377, 'Abdus Salam', NULL, '01715055071 , 01731638328', 'House No- 06, Road No- 5, Block No-E, Mirpur-2, Dhaka-1216', '', '', '', '', '', '', '', '377', 5800, 0, 0, 5800, 0, '2022-02-22 18:06:40', '2022-02-22 18:06:40'),
 (378, 'Md Sohel Rana', NULL, '01915147952, 01767663610', 'House 482, Road no-3, Section-07,1st Colony', '', '', '', '', '', '', '', '378', 3000, 0, 0, 3000, 0, '2022-02-23 13:49:50', '2022-02-23 13:49:50'),
 (379, 'Moazzem Hossain', NULL, '01731508309, 01711941264', 'House no- 1/4, Road no- 19, Block - B, Section- 10, Mirpur, Dhaka.', '', '', '', '', '', '', '', '379', 12900, 0, 0, 12900, 0, '2022-02-23 15:31:16', '2022-02-23 15:31:16'),
 (380, 'Dulal Engineering & Refrigeration Works', NULL, '01713038992 , 01913331973', '25, DCC Market, Kacha Bazar, Gulshan-1212.', '', '', '', '', '', '', '', '380', 91000, 0, 0, 91000, 0, '2022-02-24 16:22:00', '2022-02-24 16:22:00'),
@@ -1290,9 +1289,9 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (877, 'Jamal Bread', '', '01840841836', 'Boro Masjid Trank Road, Feni, Bangladesh.', '', '', '', 'ERF 2022 (HO-22-2068)', 'Sarker Mahadi Lotus', '', '', '696', 128000, 0, 0, 128000, 0, '2022-05-09 12:47:13', '2022-05-09 12:47:13'),
 (878, 'Tajrin Akter', '', '01937857378 , 01920247542', '16/2 6th Floor, Tolar Bag, Mirpur-1, Dhaka.', '', '', '', '(HO-22-5319)', 'Sarker Mahadi Lotus', '', '', '696', 17900, 0, 0, 17900, 0, '2022-05-09 17:14:12', '2022-05-09 17:14:12'),
 (880, 'Md. Abdul Hai', '', '01711033298', '1/E Shahid Shaikh Rasel Tower, Dhaka University.', '', '', '', 'ERF 2022 (HO-22-006712)', 'Sarker Mahadi Lotus', '', '', '697', 31900, 2900, 29000, 29000, 0, '2022-04-28 15:14:00', '2022-05-10 09:25:34'),
-(882, 'Nahida Akter', '', '01974453469 , 01754453469', 'Bondhu Mahal, 3/7/C Flat# 2/C, Borobag Mirpur-2 , Dhaka-1216.', '', '', '', '', '', '', '', '687', 69900, 3500, 66400, 66400, 0, '2022-04-30 20:03:35', '2022-05-10 09:32:29'),
-(883, 'Mrs. Syeda Afsari Islam', '', '01830361506 , 01726428149', 'House No-439 & 440, Road No- 8, Block- H, Bashundhara R/A, Dhaka.', '', '', 'Flat# B8, Palacio BTI, House No-439 & 440, Road No- 8, Block- H, Bashundhara R/A, Vatara, Dhaka.', 'Price with Installation up to 13 feet. (HO-22-6786)', 'Sarker Mahadi', '', 'SP-1', '678', 102900, 5900, 97000, 97000, 0, '2022-04-29 11:11:26', '2022-05-10 09:34:58');
+(882, 'Nahida Akter', '', '01974453469 , 01754453469', 'Bondhu Mahal, 3/7/C Flat# 2/C, Borobag Mirpur-2 , Dhaka-1216.', '', '', '', '', '', '', '', '687', 69900, 3500, 66400, 66400, 0, '2022-04-30 20:03:35', '2022-05-10 09:32:29');
 INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_name`, `cp_number`, `cp_address`, `narration`, `relational_manager`, `guarantee_card_no`, `po_ref_no`, `invoice`, `total_amount`, `discount`, `discounted_price`, `paid_amount`, `due_amount`, `created_at`, `updated_at`) VALUES
+(883, 'Mrs. Syeda Afsari Islam', '', '01830361506 , 01726428149', 'House No-439 & 440, Road No- 8, Block- H, Bashundhara R/A, Dhaka.', '', '', 'Flat# B8, Palacio BTI, House No-439 & 440, Road No- 8, Block- H, Bashundhara R/A, Vatara, Dhaka.', 'Price with Installation up to 13 feet. (HO-22-6786)', 'Sarker Mahadi', '', 'SP-1', '678', 102900, 5900, 97000, 97000, 0, '2022-04-29 11:11:26', '2022-05-10 09:34:58'),
 (886, 'Md. Anwarul Haque', '', '01715105611 , 01714354411', '20 Boro Bag, Mirpur-2, Dhaka.', '', '', '', 'Summer Offer 2022', 'Sarker Mahadi Lotus', '', '', '697', 24900, 0, 0, 24900, 0, '2022-05-10 11:09:04', '2022-05-10 15:33:53'),
 (887, 'Md. Abdul Kader', '', '01719716708 , 01721954700', 'House No: 3, Road No: 8, Rupnagar R/A, Mirpur- 2, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '698', 8400, 0, 0, 8400, -8400, '2022-05-11 16:16:55', '2022-05-11 16:16:55'),
 (888, 'Golam Kibria', '', '01671899738 , 01716244184', '307/6 Janata Sharak, Shenpara Parbata, Mirpur-10, Dhaka-1216.', '', '', '', 'HO-21-002767', 'Sarker Mahadi Lotus', '', '', '365', 43000, 0, 0, 43000, 0, '2022-02-17 11:45:22', '2022-05-11 16:47:45'),
@@ -1381,7 +1380,6 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1080, 'Anymotion Studio', '', '01307694635 , 01312928533', 'Plot No: 110, Road no: 2, Block: A, Mirpur-2, Dhaka.', 'Md. Asad Al Hossain', '', '', 'Price with installation up to 13 feet. (HO-22-002126)', 'Sarker Mahadi Lotus', '', '', '761', 71400, 3500, 67900, 67900, 0, '2022-06-06 17:45:00', '2022-06-13 11:55:38'),
 (1083, 'Anymotion Studio', '', '01307694635 , 01312928533', 'Plot No: 110, Road no: 2, Block: A, Mirpur-2, Dhaka.', 'Md. Asad Al Hossain', '', 'House no: 19, Road no: 05, Block: F, Mirpur-1, Dhaka.', '(Price with installation up to 13 feet for per AC) {HO-22-4421}', 'Sarker Mahadi Lotus', '', '', '497', 572000, 22000, 550000, 550000, 0, '2022-03-23 12:42:32', '2022-06-13 11:59:10'),
 (1085, 'Samsul Alam', '', '01673167526', 'House: 43,44, Road: 1, Block: B, Mirpur-1, Dhaka-1216.', '', '', '', '', 'Md. Faisal Ahmed Hridoy', '', '', '757', 4500, 0, 4500, 4500, 0, '2022-03-22 18:39:00', '2022-06-13 15:12:56'),
-(1088, 'Rakibul Hasan Sagor', '', '01673678418 , 01912074034', 'House no: 30 (Level 3), Road no: 03, Block: D, Section 1, Mirpur, Dhaka.', '', '', '', '(Price with installation up to 10 feet copper pipe)', 'Sarker Mahadi Lotus', '', '', '761', 108900, 8900, 100000, 100000, 0, '2022-06-13 16:54:53', '2022-06-13 16:54:53'),
 (1092, 'Moinul Islam Mahin', '', '01916362787 , 01684264416', 'House no: 23, Road no: 02, Block: A, Mirpur-2, Dhaka.', '', '', '', 'EKB 2022', 'Sarker Mahadi Lotus', '', '', '762', 48300, 0, 0, 48300, 0, '2022-06-13 17:43:19', '2022-06-14 15:41:15'),
 (1093, 'Ilias', '', '01715873667', 'Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '764', 3000, 0, 0, 3000, 0, '2022-06-14 16:43:52', '2022-06-14 16:43:52'),
 (1094, 'Dewan Golam Kibria', '', '01671029288 , 017595808641', 'J26 Extension Pallabi, Rupnagar, Mirpur, Dhaka.', '', '', '', 'ERF 2022 (HO-22-006080)', 'Sarker Mahadi Lotus', '', '', '601', 110000, 0, 0, 110000, 0, '2022-04-18 18:51:07', '2022-06-14 18:50:07'),
@@ -1392,7 +1390,6 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1103, 'Md. Shah Alam', '', '01712146750 , 01789793705', 'House no: 03, Road no: 03, Block: A, Mirpur-2, Dhaka.', '', '', '', '(Price with installation up to 13 feet copper pipe) {HO-22-8542}', 'Sarker Mahadi Lotus', '', '', '768', 88400, 0, 0, 85400, 88400, '2022-06-18 11:49:20', '2022-06-18 12:04:32'),
 (1106, 'Samsul Alam', '', '01673167526', 'House: 43,44, Road: 1, Block: B, Mirpur-1, Dhaka-1216.', '', '', '', 'HO-22-005319 (Challan No - DC-DH-22-001548)', 'Sarker Mahadi Lotus', '', '', '757', 17900, 0, 0, 17900, 0, '2022-06-11 13:03:27', '2022-06-18 15:31:55'),
 (1111, 'Josna Ara Begum', '', '01683611461 , 01630181118', '155/1 Uttar Shah Ali Bag, Mirpur-1, Dhaka.', '', '', '', 'EKB 2022 (HO-22-09083)', 'Sarker Mahadi Lotus', '', '', '770', 38000, 0, 0, 38000, 0, '2022-06-19 13:16:36', '2022-06-19 13:16:36'),
-(1112, 'Abdullah', '', '01621442471 , 01631842879', 'Mirpur Garden Tower, Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '769', 12900, 0, 0, 12900, 0, '2022-06-19 12:53:19', '2022-06-19 17:59:48'),
 (1120, 'Md. Abdus Salam Azad', '', '01682906000 , 01680026726', 'House no: 10, Road no: 02, Block: D, Sector-1, Aftabnagar, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '773', 8400, 2900, 5500, 5500, 0, '2022-06-20 16:22:00', '2022-06-20 16:22:00'),
 (1121, 'Md. Abdus Salam Azad', '', '01682906000 , 01680026726', 'House no: 10, Road no: 02, Block: D, Sector-1, Aftabnagar, Dhaka.', 'Al-Hadi', '', '112/5 Al-Hadi Palace, Income Tax office, Mirzapur Bypass, Mirzapur, Tangail.', 'EKB 2021 (HO-22-009672)', 'Sarker Mahadi Lotus', '', 'ASA-1', '772', 159000, 0, 0, 159000, 0, '2022-06-20 12:34:51', '2022-06-20 16:22:26'),
 (1122, 'Md.Shafiqul Islam', '', '01716006677', 'FL#3-B, HS#3,4 RD#1, BL#E, SEC#1 MIRPUR, DHAKA.', '', '', '', 'EKB 2022', 'Sarker Mahadi Lotus', '', '', '774', 30900, 0, 0, 30900, 0, '2022-06-22 10:19:58', '2022-06-22 10:19:58'),
@@ -1447,7 +1444,6 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1234, 'MD. Nesar Uddin Hawladar.', '', '01726793675, 01751875251', 'HS#12, North Bishil, Kusum Bag R/A, Sarnali Tower, Mirpur-1, Dhaka.', '', '', '', 'EKB 2022 (HO-22-9083)', 'Sarker Mahadi Lotus.', '', '', '820', 32000, 0, 0, 32000, 0, '2022-07-04 18:13:44', '2022-07-04 19:27:21'),
 (1235, 'Mim.', '', '01733427117', 'HS#36/7, Middle Paik Para, Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus.', '', '', '822', 10900, 0, 0, 10900, 0, '2022-07-04 19:33:37', '2022-07-04 19:33:37'),
 (1236, 'Mr.Sopon', '', '01759232724', '92 Boro Moghbazar, Aptt-701, Dhaka', '', '', '', 'EKB 2022 (HO-22-010104)', 'Sarker Mahadi Lotus', '', '', '823', 129900, 6900, 123000, 123000, 0, '2022-06-27 21:01:00', '2022-07-05 15:10:12'),
-(1237, 'MD. Liton Hossain', '', '01819460161', '', '', '', 'Bangladesh Institute of management (BIM), Building No: 5 (c24), Dhanmondi, Dhaka, BUILDING name: Mohuya.', 'EKB 2022 (HO-22-010209)', 'Sarker Mahadi Lotus', '', '', '823', 41000, 2000, 39000, 39000, 0, '2022-06-28 21:26:00', '2022-07-05 15:30:22'),
 (1238, 'MD. Nazrul Islam.', '', '01727145255', '12/F, Borobag, Mirpur-2, Dhaka.', '', '', '', '(HO-22-010856)', 'Sarker Mahadi Lotus.', '', '', '823', 23900, 0, 0, 23900, -23900, '2022-07-05 16:55:11', '2022-07-05 16:55:11'),
 (1240, 'Shafiqul Imdad.', '', '01715792058, 01716521705', '204, Ahmed Nagar, Paik Para, Mirpur-1, Dhaka.', '', '', '', '(HO-22-007402)', 'Sarker Mahadi Lotus.', '', '', '824', 30900, 0, 0, 30900, 0, '2022-07-05 17:37:24', '2022-07-05 17:52:12'),
 (1242, 'Imran Hossain.', '', '01760299821', 'HS#1, RD#3, BK#D, Mirpur-2, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus.', '', '', '825', 4800, 0, 0, 4800, 0, '2022-07-05 19:01:45', '2022-07-05 19:07:22'),
@@ -1463,6 +1459,7 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1254, 'Abdul Karim Shikdar.', '', '01799298802, 01314896644', 'Satghuriya, Holdia, Louhojong.', '', '', '', '(HO-22-007402)', 'Sarker Mahadi Lotus.', '', '', '835', 37300, 0, 0, 37300, 0, '2022-07-07 14:01:44', '2022-07-07 14:01:44'),
 (1259, 'Mohammed Nayeem Mollah.', '', '01939914102, 01952864045', '162, Marium Mantion, West Dholaipar(Road Of Soap Factory), Jatra Bari, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus.', '', '', '837', 70000, 0, 0, 70000, 0, '2022-07-07 15:30:12', '2022-07-07 15:40:32'),
 (1261, 'MD. Momotaz Uddin.', '', '01719811589, 01712510311', 'HS#18, Hazi Road, Darul Aman Housing Society, Mirpur-3,Dhaka.', '', '', '', 'EKB 2022 (HO-22-010856)', 'Sarker Mahadi Lotus', '', '', '838', 38000, 0, 0, 38000, 0, '2022-07-07 15:48:20', '2022-07-07 15:52:26'),
+(1262, 'Masum', '', '01714934128 , 01842001374', 'Surja Shikha, Motofa Kamal Line, Dhaka cantonment.', '', '', '', 'EKB 2022', 'Sarker Mahadi Lotus', '', '', '839', 98900, 0, 0, 98900, 0, '2022-07-07 17:58:46', '2022-07-07 17:58:46'),
 (1263, 'Anju Ara Begum.', '', '01716943299, 01711464895', '9/2/A, Middle Paik Para, Mirpur-1, Dhaka.', '', '', '', '(HO-22-007402)', 'Sarker Mahadi Lotus.', '', '', '840', 30900, 0, 0, 30900, 0, '2022-07-07 18:26:35', '2022-07-07 18:26:35'),
 (1264, 'MD. Alimur Rashid.', '', '01914393149, 01622913663', 'HS#8, RD#10, Rupnagar R/A, Mirpur-2, Dhaka.', '', '', '', '(HO-22-007402)', 'Sarker Mahadi Lotus.', '', '', '841', 30900, 0, 0, 30900, 0, '2022-07-07 19:05:35', '2022-07-07 19:05:35'),
 (1265, 'MD. Moinuddin Ahmed.', '', '01711949151', 'HS#6/A, PT#53/54, RD#4, Mirpur-2, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '842', 8400, 0, 0, 8400, 0, '2022-07-07 19:29:36', '2022-07-07 19:29:36'),
@@ -1505,10 +1502,8 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1332, 'Selina Akter', '', '01762246066 , 01796603902', 'HS# 2, RD# 9, BL# C, Mirpur-1,Dhaka.', '', '', '', 'HO-22-7409', 'Sarker Mahadi Lotus', '', '', '879', 37300, 0, 0, 37300, -37300, '2022-07-22 17:24:51', '2022-07-22 17:26:36'),
 (1333, 'Md. Rakibul Hasan', '', '01913276311 , 01711589465', '906/1 Middle Monipur (Adarsho Road) Mirpur-2, Dhaka.', '', '', '', 'HO-227402', 'Sarker Mahadi Lotus', '', '', '877', 37300, 0, 0, 37300, -37300, '2022-07-22 09:51:32', '2022-07-22 18:07:18'),
 (1336, 'Shamsur Rahman', '', '01711706549', '134/8 Darus Salam, Mirpur-1, Dhaka.', '', '', '', '(HO-22-011260) {DC-DH-22-003848}', 'Sarker Mahadi Lotus', '', '', '880', 17900, 0, 0, 17900, 0, '2022-07-22 18:19:46', '2022-07-22 18:28:05'),
-(1337, 'DTIEWTPCL', '', '01716222952', 'Tannary Industrial Estate , Hemayetpur , Savar , Dhaka.', '', '', '', 'This price is including VAT- 7.50% + AIT', 'Sarker Mahadi Lotus', '', '', '881', 99892, 0, 0, 99892, 0, '2022-07-23 10:30:57', '2022-07-23 10:30:57'),
 (1338, 'Nafi', '', '01717887901', 'Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi lotus', '', '', '882', 1250, 0, 0, 1250, 0, '2022-07-23 17:01:00', '2022-07-23 17:01:00'),
 (1343, 'DTIEWTPCL', '', '01716222952', 'Tannary Industrial Estate , Hemayetpur , Savar , Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '884', 6800, 0, 6800, 6800, 0, '2022-07-24 18:24:31', '2022-07-24 18:27:58'),
-(1351, 'DTIEWTPCL', '', '01716222952', 'Tannary Industrial Estate , Hemayetpur , Savar , Dhaka.', '', '', '', 'Price with installation up to 10 feet copper pipe. This price is including VAT- 7.50% + AIT - 3% (HO-22-011910) {Challan No - DC-DH-22-004059}', 'Sarker Mahadi Lotus', '', '', '885', 99892, 0, 0, 99892, 0, '2022-07-19 18:52:00', '2022-07-25 12:54:31'),
 (1354, 'Sajib', '', '01753608387 , 01968815601', 'HS# 10, RD# 3, BL# C, Kalwalapara, Mirpur-1, Dhaka.', '', '', '', 'Price with installation up to 10 feet copper pipe.', 'Sarker Mahadi Lotus', '', '', '883', 118900, 4900, 114000, 114000, 0, '2022-07-24 17:26:41', '2022-07-26 09:29:46'),
 (1390, 'Mohammad Abdul Kuddus Sumon', '', '01678131217', 'House no: 4/2, Hira Jhil R/A, Mirpur-14 B Tin Shed Colony.', '', '', '', 'EKB 2022. Price with installation & copper pipe. (HO-22-00', 'Sarker Mahadi Lotus', '', '', '884', 114000, 6000, 108000, 108000, 0, '2022-07-16 15:38:00', '2022-07-26 16:26:54'),
 (1391, 'Md. Chayan', '', '01911249850', 'House - 2, Flat-A4, Road 17, Sector 4, Uttara, Dhaka.', '', '', '', 'Price with installation & copper pipe', 'Sarker Mahadi Lotus', '', '', '885', 237800, 15800, 222000, 222000, 0, '2022-07-25 22:28:00', '2022-07-26 16:35:05'),
@@ -1516,10 +1511,8 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1395, 'Istik Ahamed', '', '01718974949 , 01717286027', '52/1/C Ahmed Nagar, Mirpur-1, Dhaka.', '', '', '', 'EKB 2022', 'Sarker Mahadi Lotus', '', '', '887', 38000, 0, 0, 38000, -38000, '2022-07-24 22:43:00', '2022-07-27 16:44:47'),
 (1399, 'Shamim Ara Nipa', '', '01681939383 , 01616027302', '123/C Road no: 10, South Bishil, Mirpur-1, Dhaka.', '', '', '', '(HO-22-011260) {Challan No: DC-DH-22-003848)', 'Sarker Mahadi Lotus', '', '', '889', 17900, 0, 17900, 17900, 0, '2022-07-29 15:10:55', '2022-07-29 15:15:48'),
 (1401, 'Istik Mahamood', '', '01716129290, 01811486518', '163/B Middle Paikpara, Mirpur-1, Dhaka', '', '', '', '(HO-22-003870) , {Challan No - DC-DH-22-000985}', 'Sarker Mahadi Lotus', '', '', '890', 10500, 700, 9800, 9800, 0, '2022-07-29 16:53:19', '2022-07-29 16:54:46'),
-(1403, 'Asikur Rahman', '', '01712027523 , 01672699077', '353/1-C South Paikpara , Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '892', 118000, 3000, 115000, 115000, 0, '2022-07-29 17:38:46', '2022-07-29 17:38:46'),
 (1405, 'Md. Akter Hossain', '', '01746628006 , 01726050130', 'HS# 22, RD# 8, BL# A, Mirpur-12, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '889', 69900, 2400, 67500, 67500, 0, '2022-07-30 14:21:14', '2022-07-30 14:21:14'),
 (1406, 'DTIEWTPCL', '', '01716222952', 'Tannary Industrial Estate , Hemayetpur , Savar , Dhaka.', '', '', '', 'Price with installation up to 10 feet copper pipe. This price is including VAT- 7.50% + AIT - 3% (HO-22-011910) {Challan No - DC-DH-22-004058}', 'Sarker Mahadi Lotus', '', '', '890', 99892, 0, 0, 99892, -99892, '2022-07-26 16:31:00', '2022-07-31 10:36:28'),
-(1407, 'DTIEWTPCL', '', '01716222952', 'Tannary Industrial Estate , Hemayetpur , Savar , Dhaka.', '', '', '', 'Price with installation up to 10 feet copper pipe. This price is including VAT- 7.50% + AIT - 3% (HO-22-011910) {Challan No - DC-DH-22-004059}', 'Sarker Mahadi Lotus', '', '', '891', 99892, 0, 0, 99892, 0, '2022-07-27 16:32:00', '2022-07-31 10:36:34'),
 (1415, 'Haji Muhammed Johir Hossen', '', '01718064745 , 01703261455', '11 C Abenue 5, Line-17,Ho-10, Dhaka-1216.', '', '', '', '', 'Sarker Mahadi Lotus.', '', '', '888', 41000, 0, 0, 41000, 0, '2022-07-28 16:18:42', '2022-07-31 16:21:21'),
 (1418, 'Safiul Kabir', '', '01920690375 , 01783560217', '54/2/1/2 Flat# 2A, Shah Ali Bag, Mirpur-1, Dhaka.', '', '', '54/2/1/2 Flat# 2A Rajanigandha Garden Tower, Shah Ali Bag, Mirpur-1, Dhaka.', '', 'Sarker Mahadi Lotus', '', '', '889', 26900, 0, 0, 26900, 0, '2022-07-31 16:57:10', '2022-07-31 16:58:16'),
 (1420, 'Md. Kawsar', '', '01713688315', 'Turag City, Mirpur-1, Dhaka', '', '', '', '', 'Md.Faisal Ahmed', '', '', '890', 19000, 1000, 18000, 18000, 0, '2022-08-01 16:35:02', '2022-08-01 16:36:55'),
@@ -1533,7 +1526,6 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1432, 'Mir Arif Hossain', '', '01716343217 , 01756167278', '132/1 East Ahmed Nagar, Jonaki Road, Mirpur-1, Dhaka.', '', '', '', 'HO-21-012186', 'Sarker Mahadi Lotus', '', '', '891', 74900, 0, 0, 74900, 0, '2022-07-29 17:26:22', '2022-08-05 16:00:20'),
 (1435, 'Istik Ahamed', '', '01718974949 , 01717286027', '52/1/C Ahmed Nagar, Mirpur-1, Dhaka.', '', '', '', 'HO-22-011260   (Chalan No - DC-DH-223848)', 'Sarker Mahadi Lotus', '', '', '892', 17900, 700, 17200, 17200, 0, '2022-08-06 17:10:23', '2022-08-06 17:26:29'),
 (1436, 'Md. Lutfor Rahman', '', '01847027977', 'Mohiuddin Tower, Flat# 6(B+C) Chha-68, North Badda, Dhaka.', '', '', '', 'EKB 2022 (HO-22-011944)', 'Sarker Mahadi Lotus', '', 'Sakhawat', '893', 68000, 6000, 62000, 62000, 0, '2022-08-23 17:50:00', '2022-08-08 11:54:29'),
-(1439, 'Nuzmun Nahar', '', '01712207752,01763275884', 'HS-97, FL-4B, RD-8, Jonota Housing Mirpur-1, Dhaka.', '', '', '', 'Esquire Summer Closing Deal 2022', 'Sarker Mahadi Lotus.', '', '', '894', 149900, 0, 149900, 149900, 149900, '2022-08-09 10:41:02', '2022-08-09 10:46:02'),
 (1441, 'Md. Munib', '', '01915599920, 01552637064', '181 Middle Paikpara, Mirpur-1, Dhaka-1216', '', '', '', 'Esquire Summer Closing Deal 2022. (HO-22-9937)', 'Sarker Mahadi Lotus', '', '', '895', 129900, 0, 0, 129900, 0, '2022-08-09 16:34:08', '2022-08-09 16:35:25'),
 (1445, 'M/s Lucky Departmental store', '', '01748003366 , 01912651246', '12,13 Ground Floor, Muktijoddha Supermarket, Mirpur-1, Dhaka.', 'Retd. Colonel Sultanuzzaman', '', '', 'Price with installation up to 13 feet copper pipe. Flash Sales Offer', 'Sarker Mahadi Lotus', '', '', '896', 112000, 14000, 98000, 98000, 0, '2022-08-10 09:30:18', '2022-08-10 09:36:51'),
 (1467, 'Authi', '', '01837462785 , 01916571352', 'HS# 8, RD# 1, Turag City, Priyanka Housing, Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '350', 10900, 1300, 9600, 9600, 0, '2022-08-16 17:36:06', '2022-08-16 17:36:06'),
@@ -1546,40 +1538,37 @@ INSERT INTO `sales` (`id`, `c_name`, `c_email`, `c_number`, `c_address`, `cp_nam
 (1494, 'Lotus International', '', '01675011631', '1-4 Asha Plaza, \r\n1 No Super Market, \r\nMirpur-1, Dhaka-1216', '', '', '', '(HO-22-5504)', 'Inter Company', '', '', '599', 2, 0, 0, 2, 0, '2022-04-10 19:30:00', '2022-08-20 10:50:52'),
 (1496, 'Sharif Mahmud', '', '01614614734, 01680174696', 'Seven Star Building, 1st floor, Tokkar Math, Fatullah Cricket Stadium. Narayanganj, Dhaka.', '', '', '', 'TBO 2021 (HO-21-015813)', 'Sarker Mahadi Lotus', '', '', '699', 29000, 0, 0, 29000, 0, '2021-09-27 14:41:32', '2022-08-20 10:52:42'),
 (1501, 'Md. Sajib', '', '01712697066 , 01680836595', 'House no: 44, Darus Salam, Mirpur, Dhaka.', '', '', '', 'ESQ 2022. This Price with installation up to 13 feet copper pipe. (HO-22-013003)', 'Sarker Mahadi Lotus', '', '', '901', 74500, 74500, 0, 74500, 0, '2022-08-19 18:13:16', '2022-08-20 13:13:22'),
-(1504, 'Dr. Jaynul Abedin', '', '01718907728 , 01736613799', '712/10 Baitul Aman Housing Society, Adabar 10, Dhaka.', '', '', '', 'ESC Offer 22', 'Sarker Mahadi Lotus', '', '', '902', 177800, 6900, 170900, 170900, 0, '2022-08-20 16:25:24', '2022-08-20 16:29:49'),
 (1506, 'Ripon', '', '01764556295', '274 South Paikpara, Notun Bazar , Dhaka.', '', '', '', 'This Price with installation up to 13 feet copper pipe. (HO-22-013005)', 'Sarker Mahadi Lotus', '', '', '903', 112000, 4000, 108000, 108000, 0, '2022-08-20 16:46:49', '2022-08-20 16:48:13'),
 (1509, 'Pran Gobindo Dhor', '', '01755529143 , 01815436305', 'Melartek, Kaundia, Savar, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '904', 7400, 400, 7000, 7000, 0, '2022-08-20 18:11:18', '2022-08-20 18:24:45'),
-(1514, 'Subhadra Pal', '', '01713384854 , 01734328631', 'Village: East-Shanbanda, Thana + Post: Balirtech, District: Manikganj, Division: Dhaka.', 'Sukumar Pal', '', '', 'ERF 2022 (HO-22-006617)', 'Sarker Mahadi Lotus', '', '', '695', 69900, 8900, 61000, 61000, 0, '2022-05-09 17:12:00', '2022-08-21 12:20:44'),
 (1517, 'Mohammad Abul Faysal', '', '01672143582 , 01619810681', '6/14-6/17, Flat-10C, Comfort Hossain, Humayun Road, Mohammadpur, Dhaka.', '', '', '', 'Esquire Summer Closing Deal - 2022 (HO-22-013358) {DC-DH-22-004487}', 'Iqbal Hossain Arafat', '21-3259', '01737609826', '905', 104900, 2000, 102900, 102900, 0, '2022-08-18 17:58:00', '2022-08-21 13:31:29'),
-(1528, 'Md. Zamir Ali Ishaque', '', '01754974965', 'House no: 1/3, Road no: 2, Block: C, Bosila City Developers Limited, Mohammadpur, Dhaka-1207.', '', '', '', 'Esquire Summer Closing Deal - 2022 (HO-22-013358)', 'Sarker Mahadi Lotus', '', 'SP-1', '894', 56900, 3900, 53000, 53000, 0, '2022-08-22 12:08:08', '2022-08-22 12:15:36'),
-(1530, 'Smart Walk', '', '01976278925 , 01911393327', 'Shop no- 2, (Ground Floor), Muktijoddha Supermarket, Mirpur-1, Dhaka-1216.', 'Hasin Ahmed', '', 'Shop no- 2, (Ground Floor), Muktijoddha Supermarket, Mirpur-1, Dhaka-1216.', 'Price with installation up to 13 feet. (HO-22-3780)', 'Sarker Mahadi', '', '', '441', 204900, 20900, 184000, 184000, 0, '2022-03-10 11:57:32', '2022-08-22 16:48:54'),
-(1531, 'Suraiya', '', '01722105660 , 01746624818', '1/D, 3/24 Mirpur, Dhaka', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '894', 3200, 200, 3000, 3000, 0, '2022-08-22 16:15:04', '2022-08-22 16:49:23'),
-(1535, 'Golam Moula', '', '01917218414 , 01675703885', 'House no: 26, Road no: 2, Block: F,  Section-2, Mirpur, Dhaka.', '', '', '', 'TBO 22 (No Gift) {HO-21-012282}', 'Sarker Mahadi Lotus', 'S-21-12836', '', '902', 38900, 2500, 36400, 36400, 0, '2022-09-11 20:01:39', '2022-09-11 14:08:20'),
-(1538, 'Monalisa Rahman', '', '01710542323 , 01737948136', 'House no: 31/32 , Road no: 03 , Block no: TA , Mirpur-6, Dhaka1216', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '904', 2500, 200, 2300, 2500, -200, '2022-09-11 18:17:07', '2022-09-11 18:20:20'),
-(1539, 'Ayat', '', '01793661344 , 01717529032', '500 Senpara, Mirpur, Dhaka', '', '', '', '(HO-22-0111260) {DC-DH-22-003848}', 'Sarker Mahadi Lotus', 'S-22-5582', '', '905', 17900, 0, 0, 17900, -17900, '2022-09-12 17:54:55', '2022-09-12 17:54:55'),
-(1540, 'Saiful Islam', '', '01839295188', '10/Kha Bangladesh Korea Technical Training Institute Staff Quarter, Darus Salam, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '906', 8400, 1200, 7200, 7200, 0, '2022-09-13 17:51:05', '2022-09-13 17:51:05'),
-(1542, 'Milon Mollick', '', '01716711072 , 01743957700', '77 West Kafrul, Taltola, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '908', 3200, 160, 3040, 3040, 0, '2022-09-13 18:04:00', '2022-09-13 18:04:00'),
-(1544, 'Hridoy Shikder', '', '01772565121 , 01631178336', 'Union# Umiyetpur , Thana: Shibchar, District: Madaripur, Division: Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '909', 16800, 4800, 12000, 0, 12000, '2022-09-14 11:21:32', '2022-09-14 11:27:39'),
-(1547, 'Masum', '', '01714934128 , 01842001374', 'Surja Shikha, Motofa Kamal Line, Dhaka cantonment.', '', '', '', 'EKB 22 (HO-22-011259)', 'Sarker Mahadi Lotus', 'S-22-5576', '', '839', 98900, 0, 0, 98900, 0, '2022-07-07 17:58:46', '2022-09-16 15:46:10'),
-(1551, 'Yasmin Ara', '', '01714092823 , 01998083350', '385/1/B, Building Name: Ashiana, Uttar Kazipara, Mirpur, Dhaka.', '', '', '', 'TBO 22. This Price with installation up to 10 feet copper pipe. (HO-22-014439).', 'Sarker Mahadi Lotus', 'S-21-3246', '', '910', 100900, 0, 100900, 100900, 0, '2022-09-09 22:53:00', '2022-09-18 10:32:10'),
-(1556, 'Root Next', '', '01716577218 / 01882197988', 'House no: 229, Flat# 6 A,B, Road no: 3, Avenue: 1, Mirpur DOHS, Dhaka.', 'Sayedul Islam', '', '', 'TBO 22. This price with installation up to 10 feet copper pipe. HO-22-13004', 'Sarker Mahadi Lotus', 'G-22-17081', '', '913', 108900, 3900, 105000, 105000, 0, '2022-09-18 11:05:54', '2022-09-18 11:19:12'),
-(1557, 'Sheikh Rafiqul Islam', '', '01728222646', 'Paradise Plaza, Commercial Plot # 6 &11 Block-B, Main Road, Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '914', 2500, 100, 2400, 2400, 0, '2022-09-18 17:47:47', '2022-09-18 17:47:47'),
-(1560, 'Far East Spinning industries Ltd.', '', '01713038992', 'House no: 9B, Road no: 03, Gulshan-1, Dhaka.', '', '', '', 'Cash Deposit By Customer In (Esquire Electronics Ltd. Dutch Bangla Bank Ltd. A/C No. 9543010000220) {HO-22-014904}', 'Sarker Mahadi Lotus', '', '', '915', 271000, 1000, 270000, 270000, 0, '2022-09-19 10:58:00', '2022-09-19 11:01:54'),
-(1562, 'Advocate Habiba', '', '01754115506', 'Flat# E-14, 14th Floor, 50/B, Shanta Garden, Eskaton, Moghbazar, Dhaka.', '', '', '', 'TBO 22. HO-22-007727', 'Sarker Mahadi Lotus', 'G-22-4474', 'SP-1', '917', 109900, 0, 0, 109900, -109900, '2022-09-11 19:37:00', '2022-09-19 13:44:41'),
-(1563, 'Mr.Chayon', '', '01911249850', 'House no: 331, Road no: 5, Baridhara DOHS, Dhaka.', '', '', '', 'TBO 22. (HO-22-013005)', 'Sarker Mahadi Lotus', 'G-22-17090', 'SP-1', '918', 99900, 0, 0, 99900, -99900, '2022-09-11 19:45:00', '2022-09-19 13:50:15'),
-(1566, 'Advocate Habiba', '', '01754115506', 'Flat# E-14, 14th Floor, 50/B, Shanta Garden, Eskaton, Moghbazar, Dhaka.', '', '', '', 'TBO 22. HO-22-007727', ':Sarker Mahadi Lotus', 'G-22-4475', '', '919', 109900, 0, 0, 109900, 0, '2022-09-15 19:51:00', '2022-09-19 14:43:09'),
-(1568, 'Mohiuddin Ahmed', '', '01678797125 / 01685417147', '307/1/B/3 Pirerbag, Mirpur, Dhaka.', '', '', '', 'TBO 22. (No Gift) {HO-22-007402}', 'Sarker Mahadi Lotus', 'S-22-8923', '', '920', 38900, 1900, 37000, 37000, 0, '2022-09-19 15:55:46', '2022-09-19 15:55:55'),
-(1570, 'Soumitro Ghosh', '', '01678115929 , 01920233401', 'Flat# A-5, 64/2 Shah Ali Bagh, Mirpur-1, Dhaka.', '', '', '', 'TBO 22 (No Gift) {HO-22-014565}', 'Sarker Mahadi Lotus', 'S-22-6091', '', '903', 143900, 15900, 128000, 128000, 0, '2022-09-11 16:59:15', '2022-09-21 10:59:25'),
-(1572, 'Professor Quazi Manzur Kadir', '', '01711143649 , 01711238422', 'Building no: 3, Flat# 5-B, Mirpur Garden Tower, Shah Ali Bagh, Mirpur-1, Dhaka.', '', '', '', 'TBO 22. (No Gift) {HO-22-014824 , 12519}', 'Sarker Mahadi Lotus', 'S-22-6089 , 19-0031', '', '911', 154800, 7800, 147000, 147000, 0, '2022-09-17 16:33:00', '2022-09-21 11:28:23'),
-(1574, 'Belal Aziz', '', '01975535564 / 01819207740', 'House no: 7, Road no: 5 ,Rupnagar Residential Area, Mirpur, Dhaka.', '', '', '', 'TBO 22. (No Gift) {HO-22-014855}', 'Sarker Mahadi Lotus', 'S-22-12158', '', '912', 69900, 4000, 65900, 65900, 0, '2022-09-18 10:59:41', '2022-09-21 11:37:33'),
-(1575, 'Faisal Badal Anas / Beauty', '', '01302050596 / 01877428719', '241/1 , Word no: 3, Adarsha para, Thana: Homna, Division: Comilla.', '', '', '', 'TBO 22. (No Gift) {HO-22-014915}', 'Sarker Mahadi Lotus', 'S-22-5580', '', '916', 139000, 14000, 125000, 125000, 0, '2022-09-19 13:11:10', '2022-09-21 11:53:24'),
-(1578, 'Mostofa', '', '01833333373 / 01740903020', 'East Baish Taki, Kafrul, Dhaka.', '', '', '', 'DITF 22. (HO-22-000956)', 'Sarker Mahadi Lotus', 'S-21-9897', '', '292', 12900, 0, 0, 12900, 0, '2022-01-20 19:31:40', '2022-09-22 16:18:19'),
-(1579, 'Roksana Akter', '', '01725121849 / 01914616127', '3/5/C Road no: 2, Shyamoli, Dhaka', '', '', '', 'TBO 22. (No Gift) {HO-22-014968}', 'Sarker Mahadi Lotus', '', '', '921', 57900, 6400, 51500, 51500, 0, '2022-09-20 17:31:50', '2022-09-23 13:51:37'),
-(1582, 'Md. Hasan Mahmud', '', '01712891308 / 01571770186', 'House no: 01, Flat# 3B (3rd Floor), Road no: 05, Block: G1, Section - 02, Mirpur, Dhaka.', '', '', '', 'TBO 22. (No Gift) {HO-22-009084}', 'Sarker Mahadi Lotus', 'S-22-7070', '', '922', 33000, 2000, 31000, 31000, 0, '2022-09-23 13:53:35', '2022-09-23 13:55:20'),
-(1584, 'S. M Shaheed', '', '01823294586 / 01711174774', '36/10 Shah Ali Bagh, Mirpur-1, Dhaka.', '', '', '', 'TBO 22. (HO-22-007402)', 'Sarker Mahadi Lotus', 'S-22-8922', '', '923', 38900, 2400, 36500, 36500, 0, '2022-09-24 11:12:47', '2022-09-24 11:18:10'),
-(1585, 'Md. Polash Mia', '', '01764417121 / 01626210004', '4th Floor, Marzan Fashion, Sanghita Bhaban, Mirpur, Dhaka.', '', '', 'Shibchar, Madaripur, Dhaka', 'TBO 22. (No Gift)', 'Sarker Mahadi Lotus', '', '', '924', 99900, 5900, 94000, 94000, 0, '2022-09-24 15:56:05', '2022-09-24 15:56:05'),
-(1586, 'Md. Fazlur Rahman', '', '01552459355 / 01704679757', '17/6/1 Tolarbag (2 No Gate), Mirpur-1, Dhaka.', '', '', '', 'TBO 22. (No Gift) {HO-22-007402}', 'Sarker Mahadi Lotus', 'S-22-8920', '', '925', 33000, 2000, 31000, 31000, 0, '2022-09-24 16:42:36', '2022-09-24 16:42:36'),
-(1588, 'Md. Azizur Rahman', '', '01712722141 / 01670791670', '31/3 shenpara Pabata, Mirpur-10, Dhaka.', '', '', '', 'TBO 22. (No Gift) {22-002068}', 'Sarker Mahadi Lotus', 'S-20-6641', '', '926', 73900, 5000, 68900, 68900, 0, '2022-09-24 17:43:23', '2022-09-25 10:22:10');
+(1533, 'Md. Shamim Hossain', '', '01727777373', '41 Circular road, Hatirpool, Dhaka.', '', '', '', '', 'Md. Fazlay Rabbi Abir', '', '', '895', 40000, 0, 0, 40000, 0, '2022-08-20 19:25:00', '2022-08-26 12:28:41'),
+(1534, 'Suraiya', '', '01722105660 , 01746624818', '1/D, 3/24 Mirpur, Dhaka', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '894', 3200, 200, 3000, 3000, 0, '2022-08-22 16:15:04', '2022-08-26 16:25:48'),
+(1535, 'Kazi Azharul Islam', '', '01766189495 , 01746389096', 'Building No: 5, Flat No: 12B, Government Officers Apertment Complex, Mirpur- 2, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '894', 32900, 1900, 31000, 31000, 0, '2022-08-26 16:31:09', '2022-08-26 16:31:09'),
+(1541, 'Abdullah', '', '01621442471 , 01631842879', 'Mirpur Garden Tower, Mirpur-1, Dhaka.', '', '', '', 'HO-22-009606', 'Sarker Mahadi Lotus', '', '', '769', 12900, 0, 0, 12900, 0, '2022-06-19 12:53:19', '2022-08-27 14:37:51'),
+(1542, 'Salim Shahied', '', '01715491246 , 01713047717', 'House no: 148/1, Road no: 5, Kallyanpur, Mirpur, Dhaka.', '', '', '', 'This Price with installation up to 13 feet copper pipe. (HO-21-2768)', 'Sarker Mahadi Lotus', '', '', '895', 114000, 7000, 107000, 107000, 114000, '2022-08-27 11:20:37', '2022-08-27 16:56:50'),
+(1544, 'Md. Zamir Ali Ishaque', '', '01754974965', 'House no: 1/3, Road no: 2, Block: C, Bosila City Developers Limited, Mohammadpur, Dhaka-1207.', '', '', '', 'Esquire Summer Closing Deal - 2022 (HO-22-013363)', 'Sarker Mahadi Lotus', 'S-22-6020', 'SP-1', '894', 56900, 3900, 53000, 53000, 0, '2022-08-22 12:08:08', '2022-08-28 10:21:32'),
+(1547, 'Dr. Jaynul Abedin', '', '01718907728 , 01736613799', '712/10 Baitul Aman Housing Society, Adabar 10, Dhaka.', '', '', '', 'Summer Offer 22 (HO-22-013463 , 467)', 'Sarker Mahadi Lotus', 'S-22-6051 , 3624', 'SP-1', '902', 177800, 6900, 170900, 170900, 0, '2022-08-20 16:25:24', '2022-08-28 12:22:53'),
+(1551, 'Smart Walk', '', '01976278925 , 01911393327', 'Shop no- 2, (Ground Floor), Muktijoddha Supermarket, Mirpur-1,  Dhaka-1216.', 'Hasin Ahmed', '', 'Shop no- 2, (Ground Floor), Muktijoddha Supermarket, Mirpur-1, Dhaka-1216.', 'Price with installation up to 13 feet. (HO-22-3780)', 'Sarker Mahadi', '', '', '441', 204900, 20900, 184000, 184000, 0, '2022-03-10 11:57:32', '2022-08-30 10:22:05'),
+(1553, 'Nuruzzaman', '', '01923057151 , 01917506286', 'Flat# 52, Road# 03, City Tower, Kushum Bag, Mirpur-1, Dhaka.', '', '', '', 'Summer Closing AC Flash Sales 22. (HO-22-013855)', 'Sarker Mahadi Lotus', '', '', '898', 82500, 20500, 62000, 62000, 0, '2022-08-30 12:42:43', '2022-08-31 09:51:15'),
+(1555, 'Star International', '', '01711540181 , 01971540181', '280 Boro Moghbazar, Dhaka-1217', 'Showkat Osman', '', '', 'Summer Offer 22. (HO-22-013960)', 'Sarker Mahadi Lotus', '', '', '899', 35900, 0, 0, 35900, -35900, '2022-08-31 14:50:02', '2022-08-31 14:52:02'),
+(1560, 'Md. Almas Uddin', '', '01712131322 , 01626221300', 'House no -16, Darus salam, Mirpur, Dhaka-1216', '', '', '', 'Summer Offer 22', 'Sarker Mahadi Lotus', '', '', '900', 37000, 0, 0, 37000, 0, '2022-08-31 16:13:39', '2022-08-31 17:39:27'),
+(1562, 'Shah Mohammad Nurul Amin', '', '01715596397 , 01736842607', '71/1 Middle Paikpara, Central Road, Mirpur-1, Dhaka.', '', '', '', 'Summer Closing AC Flash Sales 22. (HO-22-013004)', 'Sarker Mahadi Lotus', 'G-22-17083', '', '901', 85400, 21400, 64000, 64000, 0, '2022-08-31 17:45:26', '2022-08-31 17:50:42'),
+(1564, 'Md. Saiful Islam', '', '01730088001 , 01816737272', 'House no: F/A, Road no: Avenue - 9, Block# F, Sector - 2, Aftab Nagar Residential Area, Dhaka.', '', '', '', 'Summer Closing AC Flash Sales 22. Price with installation up to 10 feet. (HO-22-013005)', 'Sarker Mahadi Lotus', '', '', '902', 217800, 31800, 186000, 186000, 0, '2022-08-31 18:54:56', '2022-08-31 18:56:29'),
+(1566, 'Asikur Rahman', '', '01712027523 , 01672699077', '353/1-C South Paikpara , Mirpur-1, Dhaka.', '', '', '', 'EKB 22. (HO-22-012250)', 'Sarker Mahadi Lotus', 'S-22-6018', '', '892', 118000, 3000, 115000, 115000, 0, '2022-07-29 17:38:46', '2022-09-02 09:54:40'),
+(1568, 'Fahim', '', '01720837032 , 01715392179', '127 East Monipur, Mirpur, Dhaka.', '', '', '', 'Summer Offer 22 (HO-22-013781)', 'Sarker Mahadi Lotus', 'S-22-6063', '', '896', 172000, 20000, 152000, 152000, 0, '2022-08-28 14:39:34', '2022-09-02 10:23:23'),
+(1569, 'Araf International', '', '01673892442 , 01813615037', '726/40/Ka Baitul Aman Housing, Adabor, Dhaka.', 'Mizanur Rahman', '', 'LGED Head Quater (RDEC Bhaban), Agargon, Dhaka.', '', 'Sarker Mahadi Lotus', '', '', '903', 142000, 0, 0, 142000, 0, '2022-09-02 10:15:05', '2022-09-02 10:42:55'),
+(1573, 'Maria Shirin', '', '01744898420 , 01717233682', 'House no: 09, Road no: 15, Rupnagar Residential Area, Mirpur, Dhaka.', '', '', '', '(HO-22-003870)', 'Sarker Mahadi Lotus', 'S-22-5677', '', '904', 7900, 400, 7500, 7500, 0, '2022-09-02 10:42:59', '2022-09-02 10:57:37'),
+(1576, 'Farhana Karim', '', '01716340512', '269/A (3rd Floor) Isha Ka Road, Paikpara, Mirpur-1, Dhaka.', '', '', '', 'Summer Offer 22 (HO-22- 2126,13781,5996)', 'Sarker Mahadi Lotus', 'S-21-7567, 22-6062, 8049', '', '897', 203200, 16200, 187000, 187000, 0, '2022-08-28 17:50:22', '2022-09-02 11:16:21'),
+(1578, 'Nuzmun Nahar', '', '01712207752,01763275884', 'HS-97, FL-4B, RD-8, Jonota Housing Mirpur-1, Dhaka.', '', '', '', 'Summer Offer 22. (HO-22-012823)', 'Sarker Mahadi Lotus.', 'S-22-6043', '', '894', 149900, 0, 149900, 149900, 149900, '2022-08-09 10:41:02', '2022-09-02 11:29:05'),
+(1580, 'Rayhan Islam', '', '01722851736 , 01759339422', 'Teachers Studio Appartement, Daffodil International University, Daffodil Smart City (DSC), Ashulia, Dhaka-1341.', '', '', '', '(HO-22-004690)', 'Sarker Mahadi Lotus', 'S-21-8536', '', '905', 149900, 0, 0, 149900, 0, '2022-09-03 11:21:38', '2022-09-03 11:26:30'),
+(1583, 'Subhadra Pal', '', '01713384854 , 01734328631', 'Village: East-Shanbanda, Thana + Post: Balirtech - 1800, District: Manikganj, Division: Dhaka, Bangladesh.', 'Sukumar Pal', '', '', 'ERF 2022 (HO-22-006617)', 'Sarker Mahadi Lotus', '', '', '695', 69900, 8900, 61000, 61000, 0, '2022-05-09 17:12:00', '2022-09-03 17:09:03'),
+(1587, 'Mr. M.Amenoor', '', '01716551661', 'Senior  Management  Counsellor & Head of Accounting  And Financial Management  Division, Bangladesh  Institute of Management (BIM) Dhanmondi, Dhaka.', '', '', '', 'EKB 22 (HO-22-010200)', 'Sarker Mahadi Lotus', '', '', '696', 75000, 0, 75000, 75000, 0, '2022-06-26 23:30:00', '2022-09-03 17:58:44'),
+(1589, 'MD. Liton Hossain', '', '01819460161', 'Bangladesh Institute of management (BIM), Building No: 5 (c24), Dhanmondi, Dhaka, BUILDING name: Mohuya.', '', '', '', 'EKB 2022 (HO-22-010209)', 'Sarker Mahadi Lotus', '', '', '823', 39000, 0, 39000, 39000, 0, '2022-06-28 21:26:00', '2022-09-03 18:00:26'),
+(1590, 'DTIEWTPCL', '', '01716222952', 'Tannary Industrial Estate , Hemayetpur , Savar , Dhaka.', '', '', '', 'Price with installation up to 10 feet copper pipe. This price is including VAT+ TAX (HO-22-011910) {Challan No - DC-DH-22-004059}', 'Sarker Mahadi Lotud', '', '', '906', 99892, 0, 0, 99892, 0, '2022-07-24 18:59:00', '2022-09-03 18:12:42'),
+(1591, 'Nilphamari DC Office', '', '01717235848', 'Nilphamari, Rangpur Division, Bangladesh', 'Lipon', '', '', 'Price with installation up to 13 feet. AC Flash Sale. (HO-22-13005)', 'Sarker Mahadi Lotus', '', '', '907', 219800, 0, 0, 219800, -219800, '2022-09-01 00:09:00', '2022-09-03 18:17:56'),
+(1593, 'Dr. Reaz Ahmed', '', '01715012674', 'BIRDEM Hospital Shahbagh, Dhaka', '', '', '', 'HO-22-014121', 'Sarker Mahadi Lotus', '', '', '906', 7900, 900, 7000, 7000, 0, '2022-09-04 11:36:56', '2022-09-04 11:37:06'),
+(1594, 'Rakibul Hasan Sagor', '', '01673678418 , 01912074034', 'House no: 30 (Level 3), Road no: 03, Block: D, Section 1, Mirpur, Dhaka.', '', '', '', '(Price with installation up to 10 feet copper pipe) {HO-22-007373}', 'Sarker Mahadi Lotus', '', '', '761', 108900, 8900, 100000, 100000, 0, '2022-06-13 16:54:53', '2022-09-04 15:52:07'),
+(1596, 'Munna', '', '01929487915', 'House no: 185, Road no: 6, South Bishil, Mirpur-1, Dhaka.', '', '', '', '', 'Sarker Mahadi Lotus', '', '', '907', 9500, 500, 9000, 9000, 0, '2022-09-05 18:10:45', '2022-09-05 18:13:10');
 
 -- --------------------------------------------------------
 
@@ -1813,6 +1802,7 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (306, 289, 'Sharp Micro Wave Oven', 'R-84A0', '(ST)V', '25L', NULL, 1, '', 16900, 16900, '2022-01-17 17:39:08', '2022-01-17 17:39:08'),
 (307, 290, 'Sharp Electric Oven', 'EO-42K', NULL, '42 L', NULL, 1, '', 10900, 10900, '2022-01-17 18:43:19', '2022-01-17 18:43:19'),
 (308, 291, 'Sharp Refrigerator', 'SJ-K155-SS', NULL, '118 L', NULL, 1, '', 20500, 20500, '2022-01-20 19:05:35', '2022-01-20 19:05:35'),
+(309, 292, 'Sharp Micro Wave Oven', 'R-72A0', '(SM)V', '25 L', NULL, 1, '', 12900, 12900, '2022-01-20 19:31:40', '2022-01-20 19:31:40'),
 (310, 293, 'Sharp Micro Wave Oven', 'R-72A1', '(SM)V', '25L', NULL, 1, '', 11000, 11000, '2022-01-21 11:23:03', '2022-01-21 11:23:03'),
 (311, 294, 'Sharp LED TV', 'LC-32SA4200i', NULL, '32 Inch', NULL, 1, '', 21900, 21900, '2022-01-21 20:06:35', '2022-01-21 20:06:35'),
 (312, 295, 'Sharp Deep Freezers', 'SJC-228', 'GY', '220L', NULL, 1, '', 36900, 36900, '2022-01-22 18:02:06', '2022-01-22 18:02:06'),
@@ -1967,9 +1957,9 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (573, 536, 'Sharp Refrigerator', 'SJ-EX315E', 'Silver', NULL, NULL, 1, 'Pcs', 57900, 57900, '2022-03-25 12:11:26', '2022-03-25 12:11:26'),
 (574, 537, 'Sharp Washing Machine', 'ES-F100G', NULL, NULL, NULL, 1, 'Pcs', 33300, 33300, '2022-03-25 12:13:32', '2022-03-25 12:13:32'),
 (575, 538, 'Sharp Washing Machine', 'ESX-858', NULL, NULL, NULL, 1, 'Pcs', 24000, 24000, '2022-03-25 12:25:26', '2022-03-25 12:25:26'),
-(576, 539, 'Sharp Micro Wave Oven', 'R-84A0(ST)V', NULL, NULL, NULL, 1, 'Pcs', 15300, 15300, '2022-03-25 12:27:16', '2022-03-25 12:27:16'),
-(577, 540, 'Sharp Washing Machine', 'ES-F140G', NULL, NULL, NULL, 1, 'Pcs', 43000, 43000, '2022-03-25 12:32:26', '2022-03-25 12:32:26');
+(576, 539, 'Sharp Micro Wave Oven', 'R-84A0(ST)V', NULL, NULL, NULL, 1, 'Pcs', 15300, 15300, '2022-03-25 12:27:16', '2022-03-25 12:27:16');
 INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `product_color`, `product_capacity`, `product_serial`, `sale_item_quantity`, `unit`, `sale_item_price`, `sale_item_total_amount`, `created_at`, `updated_at`) VALUES
+(577, 540, 'Sharp Washing Machine', 'ES-F140G', NULL, NULL, NULL, 1, 'Pcs', 43000, 43000, '2022-03-25 12:32:26', '2022-03-25 12:32:26'),
 (578, 541, 'Sharp Micro Wave Oven', 'R-20A0(K)V', NULL, NULL, NULL, 1, 'Pcs', 6500, 6500, '2022-03-25 12:34:18', '2022-03-25 12:34:18'),
 (579, 542, 'Sharp Micro Wave Oven', 'R-32A0(SM)V', NULL, NULL, NULL, 1, 'Pcs', 10800, 10800, '2022-03-25 12:36:55', '2022-03-25 12:36:55'),
 (582, 544, 'Sharp Micro Wave Oven', 'R-32A0(SM)V', NULL, NULL, NULL, 1, 'Pcs', 10800, 10800, '2022-03-25 12:44:34', '2022-03-25 12:44:34'),
@@ -2186,7 +2176,6 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1333, 1080, 'SHARP AC Inverter (AIOT)', 'AHXP13XHVE', '', '', '', 1, 'Set', 71400, 71400, '2022-06-13 11:55:38', '2022-06-13 11:55:38'),
 (1336, 1083, 'Sharp AC Inverter (AIOT)', 'AHXP24XHVE', '', '', '', 5, 'Set', 114400, 572000, '2022-06-13 11:59:10', '2022-06-13 11:59:10'),
 (1338, 1085, 'SHARP Inverter AC Gas Charge', 'R-410', '', '', '', 1, '2 Kg', 4500, 4500, '2022-06-13 15:12:56', '2022-06-13 15:12:56'),
-(1341, 1088, 'SHARP J-Tech Inverter', 'AHXP18SHVE', NULL, NULL, NULL, 1, 'Set', 108900, 108900, '2022-06-13 16:54:53', '2022-06-13 16:54:53'),
 (1345, 1092, 'SHARP Deep Freezer', 'SJC-318', 'White', '', '', 1, 'Pcs', 50000, 50000, '2022-06-14 15:41:15', '2022-06-14 15:41:15'),
 (1346, 1093, 'PHILIPS Dry Iron', 'GC181', 'BK', NULL, NULL, 1, 'Pcs', 3000, 3000, '2022-06-14 16:43:52', '2022-06-14 16:43:52'),
 (1347, 1094, 'SHARP Refrigerator', 'SJEFD589X', 'GOLD', '', '', 1, 'Pcs', 110000, 110000, '2022-06-14 18:50:07', '2022-06-14 18:50:07'),
@@ -2198,7 +2187,6 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1358, 1103, 'Philips Dry Iron', 'GC181', 'Black', '', '', 1, 'Pcs', 3000, 3000, '2022-06-18 12:04:32', '2022-06-18 12:04:32'),
 (1361, 1106, 'SHARP Micro Wave Oven', 'R-84A0(ST) V', '', '', '202411277', 1, 'Pcs', 17900, 17900, '2022-06-18 15:31:55', '2022-06-18 15:31:55'),
 (1366, 1111, 'SHARP Deep Freezer', 'SJC-238', 'Black', NULL, NULL, 1, 'Pcs', 38000, 38000, '2022-06-19 13:16:36', '2022-06-19 13:16:36'),
-(1367, 1112, 'SHARP Micro Wave Oven', 'R-32A0(SM)V', '', '', '202411158', 1, 'Pcs', 12900, 12900, '2022-06-19 17:59:48', '2022-06-19 17:59:48'),
 (1375, 1120, 'Philips Mixer Grinder', 'HL7756', 'Black', NULL, NULL, 1, 'Pcs', 8400, 8400, '2022-06-20 16:22:00', '2022-06-20 16:22:00'),
 (1376, 1121, 'SHARP Refrigrator', 'SJEX-735P', 'Dark SL', '', '', 1, 'Pcs.', 159000, 159000, '2022-06-20 16:22:26', '2022-06-20 16:22:26'),
 (1377, 1122, 'SHARP Deep Freezer', 'SJC-178', 'Gray', NULL, NULL, 1, 'Pcs', 30900, 30900, '2022-06-22 10:19:58', '2022-06-22 10:19:58'),
@@ -2256,7 +2244,6 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1504, 1234, 'SHARP Deep Freezer', 'SJC-188', 'Black', '', '', 1, 'Pcs', 32000, 32000, '2022-07-04 19:27:21', '2022-07-04 19:27:21'),
 (1505, 1235, 'SHARP Electric Oven', 'EO42K', NULL, '42 Liter', NULL, 1, 'Pcs', 10900, 10900, '2022-07-04 19:33:37', '2022-07-04 19:33:37'),
 (1506, 1236, 'SHARP Refrigerator', 'SJEX655P', 'Black', NULL, NULL, 1, 'Pcs', 129900, 129900, '2022-07-05 15:10:12', '2022-07-05 15:10:12'),
-(1507, 1237, 'SHARP Washing Machine', 'ES-W100DS', NULL, NULL, NULL, 1, 'Pcs', 41000, 41000, '2022-07-05 15:30:22', '2022-07-05 15:30:22'),
 (1508, 1238, 'SHARP LED Tv', 'LC-32SA42001', NULL, NULL, '32SAA219LO986', 1, 'Pcs', 23900, 23900, '2022-07-05 16:55:11', '2022-07-05 16:55:11'),
 (1510, 1240, 'SHARP Deep Freezer', 'SJC-178', 'Gray', '', '', 1, 'Pcs', 30900, 30900, '2022-07-05 17:52:12', '2022-07-05 17:52:12'),
 (1512, 1242, 'Havells Mixer Grinder', 'Aspro', 'White-Light Blue', '700W', '8901762165674', 1, 'Pcs', 4800, 4800, '2022-07-05 19:07:22', '2022-07-05 19:07:22'),
@@ -2275,6 +2262,7 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1527, 1254, 'SHARP Deep Freezer', 'SJC-228', 'Gray', NULL, NULL, 1, 'Pcs', 37300, 37300, '2022-07-07 14:01:44', '2022-07-07 14:01:44'),
 (1532, 1259, 'SHARP Up Right Freezer', 'SJ-SC31CHXA1', '', '', '', 1, 'Pcs', 70000, 70000, '2022-07-07 15:40:32', '2022-07-07 15:40:32'),
 (1534, 1261, 'SHARP Deep Freezer', 'SJC-238', 'Black', '', '', 1, 'Pcs', 38000, 38000, '2022-07-07 15:52:26', '2022-07-07 15:52:26'),
+(1535, 1262, 'SHARP Refigerator', 'SJEX545P', 'Black', NULL, NULL, 1, 'Pcs', 98900, 98900, '2022-07-07 17:58:46', '2022-07-07 17:58:46'),
 (1536, 1263, 'SHARP Deep Freezer', 'SJC-178', 'Gray', NULL, NULL, 1, 'Pcs', 30900, 30900, '2022-07-07 18:26:35', '2022-07-07 18:26:35'),
 (1537, 1264, 'SHARP Deep Freezer', 'SJC-178', 'Gray', NULL, NULL, 1, 'Pcs', 30900, 30900, '2022-07-07 19:05:35', '2022-07-07 19:05:35'),
 (1538, 1265, 'PHILIPS Mixer Grinder', 'HL7756', 'Black', NULL, '2206355743', 1, 'Pcs', 8400, 8400, '2022-07-07 19:29:36', '2022-07-07 19:29:36'),
@@ -2326,7 +2314,6 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1628, 1343, 'Extra Copper Pipe & Cable', '1/4, 1/5, (70/76 Cable)', '', '', '', 6, 'Feet', 400, 2400, '2022-07-24 18:27:58', '2022-07-24 18:27:58'),
 (1629, 1343, 'Pipe Wrapping Roll', '', 'White', '', '', 2, 'Roll', 200, 400, '2022-07-24 18:27:58', '2022-07-24 18:27:58'),
 (1630, 1343, 'AC-Indoor & OutdoorUnit Dismounting', '', '', '', '', 2, 'Set', 1500, 3000, '2022-07-24 18:27:58', '2022-07-24 18:27:58'),
-(1636, 1351, 'SHARP Split AC', 'AHA24ZEVE', NULL, NULL, NULL, 1, 'Set', 99892, 99892, '2022-07-25 12:54:31', '2022-07-25 12:54:31'),
 (1639, 1354, 'General Wall Type', 'ASGA24SEFT', '', '', '', 1, 'Set', 118900, 118900, '2022-07-26 09:29:46', '2022-07-26 09:29:46'),
 (1675, 1390, 'General Wall Inverter Type', 'ASGA18CPTA-V', '', '', '', 1, 'Set', 108000, 108000, '2022-07-26 16:26:54', '2022-07-26 16:26:54'),
 (1676, 1391, 'General Wall Type', 'ASGA24SEFT', NULL, NULL, NULL, 2, 'Set', 118900, 237800, '2022-07-26 16:35:05', '2022-07-26 16:35:05'),
@@ -2334,15 +2321,13 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1680, 1395, 'SHARP Deep Freezer', 'SJC238', 'Black', '', '', 1, 'Pcs', 38000, 38000, '2022-07-27 16:44:47', '2022-07-27 16:44:47'),
 (1684, 1399, 'SHARP Micro Wave Oven', 'R-84A0(ST)V', '', '', '204411752', 1, 'Pcs', 17900, 17900, '2022-07-29 15:15:48', '2022-07-29 15:15:48'),
 (1686, 1401, 'SHARP Micro Wave Oven', 'R-279T(W)', '', '', '210308228', 1, 'Pcs', 10500, 10500, '2022-07-29 16:54:46', '2022-07-29 16:54:46'),
-(1688, 1403, 'SHARP Refrigerator', 'SJEFD589X', NULL, NULL, NULL, 1, 'Pcs', 118000, 118000, '2022-07-29 17:38:46', '2022-07-29 17:38:46'),
 (1690, 1405, 'SHARP Refrigerator', 'SJEX375E', 'Silver', NULL, NULL, 1, 'Pcs', 69900, 69900, '2022-07-30 14:21:14', '2022-07-30 14:21:14'),
 (1691, 1406, 'SHARP Split AC', 'AHA24ZEVE', NULL, NULL, NULL, 1, 'Set', 99892, 99892, '2022-07-31 10:36:28', '2022-07-31 10:36:28'),
-(1692, 1407, 'SHARP Split AC', 'AHA24ZEVE', NULL, NULL, NULL, 1, 'Set', 99892, 99892, '2022-07-31 10:36:34', '2022-07-31 10:36:34');
-INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `product_color`, `product_capacity`, `product_serial`, `sale_item_quantity`, `unit`, `sale_item_price`, `sale_item_total_amount`, `created_at`, `updated_at`) VALUES
 (1700, 1415, 'SHARP Washine machine', 'ES-W100DS-H', '', '', '', 1, 'Pcs', 41000, 41000, '2022-07-31 16:21:21', '2022-07-31 16:21:21'),
 (1703, 1418, 'SHARP Micro Wave Oven', 'ESX858', '', '', '', 1, 'Pcs', 26900, 26900, '2022-07-31 16:58:16', '2022-07-31 16:58:16'),
 (1706, 1420, 'General Air Conditioner (Compressor Terminal Repair)', 'AOGA18AAT', '', '', '', 1, 'Pcs', 6000, 6000, '2022-08-01 16:36:55', '2022-08-01 16:36:55'),
-(1707, 1420, 'General Air Conditioner (Indoor Repair)', 'ASG18ABC', '', '', '', 1, 'Pcs', 4000, 4000, '2022-08-01 16:36:55', '2022-08-01 16:36:55'),
+(1707, 1420, 'General Air Conditioner (Indoor Repair)', 'ASG18ABC', '', '', '', 1, 'Pcs', 4000, 4000, '2022-08-01 16:36:55', '2022-08-01 16:36:55');
+INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `product_color`, `product_capacity`, `product_serial`, `sale_item_quantity`, `unit`, `sale_item_price`, `sale_item_total_amount`, `created_at`, `updated_at`) VALUES
 (1708, 1420, 'Gas Charge', 'R-22', '', '', '', 2, 'Pcs', 4500, 9000, '2022-08-01 16:36:55', '2022-08-01 16:36:55'),
 (1709, 1421, 'SHARP Deep Freezer', 'SJC318', NULL, NULL, NULL, 1, 'Pcs', 50000, 50000, '2022-08-01 17:45:54', '2022-08-01 17:45:54'),
 (1710, 1422, 'SHARP LED', '2T-C42BG1I', NULL, NULL, NULL, 1, 'Pcs', 48900, 48900, '2022-08-02 11:21:30', '2022-08-02 11:21:30'),
@@ -2356,7 +2341,6 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1722, 1432, 'Sharp Up right freezer', 'SJSC3ICHXA1', '', '', '', 1, 'Pcs', 74900, 74900, '2022-08-05 16:00:20', '2022-08-05 16:00:20'),
 (1725, 1435, 'SHARP Micro Wave Oven', 'R-84A0(ST)V', '', '', '204411746', 1, 'Pcs', 17900, 17900, '2022-08-06 17:26:29', '2022-08-06 17:26:29'),
 (1726, 1436, 'Sharp AC Inverter(AIOT)', 'AHXP13XHVE', NULL, NULL, NULL, 1, 'Set', 68000, 68000, '2022-08-08 11:54:29', '2022-08-08 11:54:29'),
-(1729, 1439, 'SHARP Refrigerator', 'SJ-EX685P', 'Dark SL', '', '', 1, 'Pcs', 149900, 149900, '2022-08-09 10:46:02', '2022-08-09 10:46:02'),
 (1731, 1441, 'SHARP Refrigerator', 'SJEX655P', 'Dark SL', '', '', 1, 'Pcs', 129900, 129900, '2022-08-09 16:35:25', '2022-08-09 16:35:25'),
 (1735, 1445, 'General Wall Type', 'ASGA24SEFT', '', '', '', 1, 'Set', 112000, 112000, '2022-08-10 09:36:51', '2022-08-10 09:36:51'),
 (1757, 1467, 'SHARP Rice Cooker', 'KHS-188SS', 'White', NULL, NULL, 1, 'Pcs', 2500, 2500, '2022-08-16 17:36:06', '2022-08-16 17:36:06'),
@@ -2372,43 +2356,42 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_name`, `product_model`, `pro
 (1786, 1494, 'SHARP Micro Wave Oven', 'R279T', 'White', '', '', 1, 'Pcs', 1, 1, '2022-08-20 10:50:52', '2022-08-20 10:50:52'),
 (1788, 1496, 'SHARP Washing Machine', 'ESW85TWXT-SA', '', '', '', 1, 'Pcs', 29000, 29000, '2022-08-20 10:52:42', '2022-08-20 10:52:42'),
 (1793, 1501, 'SHARP Split AC', 'AHA18ZEVE', '', '', '', 1, 'Set', 74500, 74500, '2022-08-20 13:13:22', '2022-08-20 13:13:22'),
-(1796, 1504, 'SHARP Refrigerator', 'SJEX735P', 'Dark SL', '', '', 1, 'Pcs', 159900, 159900, '2022-08-20 16:29:49', '2022-08-20 16:29:49'),
-(1797, 1504, 'SHARP Micro Wave Oven', 'R-84A0(ST)V', '', '', '', 1, 'Pcs', 17900, 17900, '2022-08-20 16:29:49', '2022-08-20 16:29:49'),
 (1799, 1506, 'General Wall Type', 'ASGA24SEFT', '', '', '', 1, 'Set', 112000, 112000, '2022-08-20 16:48:13', '2022-08-20 16:48:13'),
 (1802, 1509, 'SHARP Rice Cooker', 'KSH188SS', 'White', '', '2021200745', 1, 'Pcs', 2500, 2500, '2022-08-20 18:24:45', '2022-08-20 18:24:45'),
 (1803, 1509, 'SHARP Rice Cooker', 'KSH458SS', 'White', '', '191100284', 1, 'Pcs', 4900, 4900, '2022-08-20 18:24:45', '2022-08-20 18:24:45'),
-(1808, 1514, 'SHARP Refriegrator', 'SJEX375E', 'Silver', '', '', 1, 'Pcs', 69900, 69900, '2022-08-21 12:20:44', '2022-08-21 12:20:44'),
 (1811, 1517, 'Sharp AC Inverter (AIOT)', 'AHXP24XHVE', '', '', '', 1, 'Set', 104900, 104900, '2022-08-21 13:31:29', '2022-08-21 13:31:29'),
-(1822, 1528, 'SHARP Refrigerator', 'SJEX285E', 'Silver', '', '', 1, 'Pcs', 56900, 56900, '2022-08-22 12:15:36', '2022-08-22 12:15:36'),
-(1824, 1530, 'General Wall Type', 'ASGA36FETA', '', '', '', 1, 'Set', 204900, 204900, '2022-08-22 16:48:54', '2022-08-22 16:48:54'),
-(1825, 1531, 'Philips Dry Iron', 'HLGC181', NULL, '', '', 1, 'Pcs', 3200, 3200, '2022-08-22 16:49:23', '2022-08-22 16:49:23'),
-(1831, 1535, 'SHARP Deep Freezer', 'SJC218', 'White', '', '', 1, 'Pcs', 38900, 38900, '2022-09-11 14:08:20', '2022-09-11 14:08:20'),
-(1834, 1538, 'SHARP Rice Cooker', 'KSH188SS', 'White', '', '201200746', 1, 'Pcs', 2500, 2500, '2022-09-11 18:20:20', '2022-09-11 18:20:20'),
-(1835, 1539, 'SHARP Micro Wave Oven', 'R84A0(ST)V', NULL, NULL, '204411751', 1, 'Pcs', 17900, 17900, '2022-09-12 17:54:55', '2022-09-12 17:54:55'),
-(1836, 1540, 'PHILIPS Mixer Grinder', 'HL7756', 'Red', NULL, NULL, 1, 'Pcs', 8400, 8400, '2022-09-13 17:51:05', '2022-09-13 17:51:05'),
-(1837, 1542, 'PHILIPS Dry Iron', 'GC181', NULL, NULL, NULL, 1, 'Pcs', 3200, 3200, '2022-09-13 18:04:00', '2022-09-13 18:04:00'),
-(1839, 1544, 'PHILIPS Mixer Grinder', 'HL7756', 'Black', '', '', 2, 'Pcs', 8400, 16800, '2022-09-14 11:27:39', '2022-09-14 11:27:39'),
-(1842, 1547, 'SHARP Refrigerator', 'SJEX545P', 'Black', '', '', 1, 'Pcs', 98900, 98900, '2022-09-16 15:46:10', '2022-09-16 15:46:10'),
-(1847, 1551, 'Sharp AC Inverter (AIOT)', 'AHXP18XHVE', '', '', '', 1, 'Set', 100900, 100900, '2022-09-18 10:32:10', '2022-09-18 10:32:10'),
-(1853, 1556, 'General Wall Inverter Type', 'ASGG18CPTA-V', '', '', '', 1, 'Set', 108900, 108900, '2022-09-18 11:19:12', '2022-09-18 11:19:12'),
-(1854, 1557, 'SHARP Rice Cooker', 'KHS188SS', 'White', NULL, NULL, 1, 'Pcs', 2500, 2500, '2022-09-18 17:47:47', '2022-09-18 17:47:47'),
-(1857, 1560, 'General Celling Type', 'ABG54FBAG', '', '', '', 1, 'Set', 271000, 271000, '2022-09-19 11:01:54', '2022-09-19 11:01:54'),
-(1859, 1562, 'General Wall Type', 'ASGA24SEFT', NULL, NULL, NULL, 1, 'Set', 109900, 109900, '2022-09-19 13:44:41', '2022-09-19 13:44:41'),
-(1860, 1563, 'General Wall Type', 'ASGA24SEFT', NULL, NULL, NULL, 1, 'Set', 99900, 99900, '2022-09-19 13:50:15', '2022-09-19 13:50:15'),
-(1863, 1566, 'General Wall Type', 'ASGA24SEFT', '', '', '', 1, 'Set', 109900, 109900, '2022-09-19 14:43:09', '2022-09-19 14:43:09'),
-(1865, 1568, 'SHARP Deep Frezzer', 'SJC218', 'White', '', '', 1, 'Pcs', 38900, 38900, '2022-09-19 15:55:55', '2022-09-19 15:55:55'),
-(1867, 1570, 'SHARP Refrigerator', 'SJESB621X', 'Black', '', '', 1, 'Pcs', 143900, 143900, '2022-09-21 10:59:25', '2022-09-21 10:59:25'),
-(1869, 1572, 'SHARP Refrigerator', 'SJEFD589X', 'GOLD', '', '', 1, 'Pcs', 39900, 39900, '2022-09-21 11:28:23', '2022-09-21 11:28:23'),
-(1870, 1572, 'SHARP LED', '2T-C42BG1I', '', '', '', 1, 'Pcs', 114900, 114900, '2022-09-21 11:28:23', '2022-09-21 11:28:23'),
-(1872, 1574, 'SHARP Deep Freezer', 'SJC528', 'Gray', '', '', 1, 'Set', 69900, 69900, '2022-09-21 11:37:33', '2022-09-21 11:37:33'),
-(1873, 1575, 'SHARP Refrigerator', 'SJEX655P', 'Silver', '', '', 1, 'Pcs', 139000, 139000, '2022-09-21 11:53:24', '2022-09-21 11:53:24'),
-(1876, 1578, 'SHARP Micro Wave Oven', 'R-72A0(SM)V', '', '', '', 1, '', 12900, 12900, '2022-09-22 16:18:19', '2022-09-22 16:18:19'),
-(1877, 1579, 'SHARP Refrigerator', 'SJEX285E', 'Silver', '', '', 1, 'Pcs', 57900, 57900, '2022-09-23 13:51:37', '2022-09-23 13:51:37'),
-(1880, 1582, 'SHARP Deep Freezer', 'SJC188', 'Black', '', '', 1, 'Pcs', 33000, 33000, '2022-09-23 13:55:20', '2022-09-23 13:55:20'),
-(1882, 1584, 'SHARP Deep Freezer', 'SJC228', 'Gray', '', '', 1, 'Pcs', 39900, 39900, '2022-09-24 11:18:10', '2022-09-24 11:18:10'),
-(1883, 1585, 'SHARP Refrigerator', 'SJEX495P', 'Brown', NULL, NULL, 1, 'Pcs', 99900, 99900, '2022-09-24 15:56:05', '2022-09-24 15:56:05'),
-(1884, 1586, 'SHARP Deep Freezer', 'SJC178', 'Gray', NULL, NULL, 1, 'Pcs', 33000, 33000, '2022-09-24 16:42:36', '2022-09-24 16:42:36'),
-(1886, 1588, 'SHARP Refrigerator', 'SJEX375E', 'Silver', '', '', 1, 'Pcs', 73900, 73900, '2022-09-25 10:22:10', '2022-09-25 10:22:10');
+(1827, 1533, 'Copper Pipe', '1/4 + 1/2', '', '', '', 100, 'Feet', 400, 40000, '2022-08-26 12:28:41', '2022-08-26 12:28:41'),
+(1828, 1534, 'Philips Dry Iron', 'HLGC181', '', '', '', 1, 'Pcs', 3200, 3200, '2022-08-26 16:25:48', '2022-08-26 16:25:48'),
+(1829, 1535, 'SHARP Washing Machine', 'ESW80EWH', NULL, NULL, NULL, 1, 'Pcs', 32900, 32900, '2022-08-26 16:31:09', '2022-08-26 16:31:09'),
+(1835, 1541, 'SHARP Micro Wave Oven', 'R-32A0(SM)V', '', '', '202411158', 1, 'Pcs', 12900, 12900, '2022-08-27 14:37:51', '2022-08-27 14:37:51'),
+(1836, 1542, 'General Wall Type', 'ASGA18FUTB', '', '', '', 1, 'Set', 114000, 114000, '2022-08-27 16:56:50', '2022-08-27 16:56:50'),
+(1838, 1544, 'SHARP Refrigerator', 'SJEX285E', 'Silver', '', '', 1, 'Pcs', 56900, 56900, '2022-08-28 10:21:32', '2022-08-28 10:21:32'),
+(1843, 1547, 'SHARP Refrigerator', 'SJEX735P', 'Dark SL', '', '', 1, 'Pcs', 159900, 159900, '2022-08-28 12:22:53', '2022-08-28 12:22:53'),
+(1844, 1547, 'SHARP Micro Wave Oven', 'R-84A0(ST)V', '', '', '', 1, 'Pcs', 17900, 17900, '2022-08-28 12:22:53', '2022-08-28 12:22:53'),
+(1850, 1551, 'General Wall Type', 'ASGA36FETA', '', '', '', 1, 'Set', 204900, 204900, '2022-08-30 10:22:05', '2022-08-30 10:22:05'),
+(1852, 1553, 'General Wall Type', 'ASGA12BMTA-A', '', '', '', 1, 'Set', 82500, 82500, '2022-08-31 09:51:15', '2022-08-31 09:51:15'),
+(1854, 1555, 'SHARP Split AC', 'AHA12PEV', '', '', '', 1, 'Set', 35900, 35900, '2022-08-31 14:52:02', '2022-08-31 14:52:02'),
+(1861, 1560, 'SHARP Deep Freezer', 'SJC228', 'Gray', '', '', 1, 'Pcs', 37000, 37000, '2022-08-31 17:39:27', '2022-08-31 17:39:27'),
+(1863, 1562, 'General Wall Inverter Type', 'ASGG12CPTA-V', '', '', '', 1, 'Set', 85400, 85400, '2022-08-31 17:50:42', '2022-08-31 17:50:42'),
+(1865, 1564, 'General Wall Type', 'ASGA18SEFT', '', '', '', 2, 'Set', 108900, 217800, '2022-08-31 18:56:29', '2022-08-31 18:56:29'),
+(1867, 1566, 'SHARP Refrigerator', 'SJEFD589X', 'GOLD', '', '', 1, 'Pcs', 118000, 118000, '2022-09-02 09:54:40', '2022-09-02 09:54:40'),
+(1869, 1568, 'SHARP Refrigerator', 'SJEX735P', 'Black', '', '', 1, 'Pcs', 172000, 172000, '2022-09-02 10:23:23', '2022-09-02 10:23:23'),
+(1870, 1569, 'General Cassette Type', 'AUGA25FRTA', '', '', '', 1, 'Set', 142000, 142000, '2022-09-02 10:42:55', '2022-09-02 10:42:55'),
+(1874, 1573, 'SHARP Micro Wave Oven', 'R-20A0(S)V', '', '', '11142245', 1, 'Pcs', 7900, 7900, '2022-09-02 10:57:37', '2022-09-02 10:57:37'),
+(1881, 1576, 'Sharp AC Inverter (AIOT)', 'AHXP18XHVE', '', '', '', 1, 'Set', 102400, 102400, '2022-09-02 11:16:21', '2022-09-02 11:16:21'),
+(1882, 1576, 'SHARP Refrigerator', 'SJEX375E', 'Silver', '', '', 1, 'Pcs', 71900, 71900, '2022-09-02 11:16:21', '2022-09-02 11:16:21'),
+(1883, 1576, 'SHARP Washing Machine', 'ESX858', '', '', '', 1, 'Pcs', 28900, 28900, '2022-09-02 11:16:21', '2022-09-02 11:16:21'),
+(1885, 1578, 'SHARP Refrigerator', 'SJEX685P', 'Silver', '', '', 1, 'Pcs', 149900, 149900, '2022-09-02 11:29:05', '2022-09-02 11:29:05'),
+(1887, 1580, 'SHARP Refrigerator', 'SJESB621X', 'Black', '', '', 1, 'Pcs', 149900, 149900, '2022-09-03 11:26:30', '2022-09-03 11:26:30'),
+(1890, 1583, 'SHARP Refriegrator', 'SJEX375E', 'Silver', '', '', 1, 'Pcs', 69900, 69900, '2022-09-03 17:09:03', '2022-09-03 17:09:03'),
+(1896, 1587, 'SHARP Deep Freezer', 'SJC228', 'Gray', '', '', 1, 'Pcs', 36000, 36000, '2022-09-03 17:58:44', '2022-09-03 17:58:44'),
+(1897, 1587, 'SHARP Washing Machine', 'ESW100DSH', '', '', '', 1, 'Pcs', 39000, 39000, '2022-09-03 17:58:44', '2022-09-03 17:58:44'),
+(1899, 1589, 'SHARP Washing Machine', 'ES-W100DS', '', '', '', 1, 'Pcs', 39000, 39000, '2022-09-03 18:00:26', '2022-09-03 18:00:26'),
+(1900, 1590, 'SHARP Split AC', 'AHA24ZEVE', '', '', '', 1, 'Set', 99892, 99892, '2022-09-03 18:12:42', '2022-09-03 18:12:42'),
+(1901, 1591, 'General Wall Type', 'ASGA18SEFT', NULL, NULL, NULL, 1, 'Set', 219800, 219800, '2022-09-03 18:17:56', '2022-09-03 18:17:56'),
+(1903, 1593, 'SHARP Micro Wave Oven', 'R20A0(K)V', '', '', '', 1, 'Pcs', 7900, 7900, '2022-09-04 11:37:06', '2022-09-04 11:37:06'),
+(1904, 1594, 'SHARP J-Tech Inverter', 'AHXP18SHVE', '', '', '', 1, 'Set', 108900, 108900, '2022-09-04 15:52:07', '2022-09-04 15:52:07'),
+(1906, 1596, 'SHARP Electric Oven', 'EO35K', '', '', '1322020139', 1, 'Pcs', 9500, 9500, '2022-09-05 18:13:10', '2022-09-05 18:13:10');
 
 -- --------------------------------------------------------
 
@@ -2430,7 +2413,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('Lx7FMDen79Ym9xcrIn2ZlvMTseuxg0ua1xGZltBW', 1, '103.141.132.157', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiQmtIZE85cFVSN1NVRmdDWlNaVTgxTVRocUhSMHZlSGRTRzl2UkVucSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzY6Imh0dHBzOi8vbG90dXNpbnQueHl6L3NhbGUtcHJpbnQvMTU4NSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRWOW5BVWJhRkhPM0QyVmxCaHpVRnplYS96RGgyVWExSjJDMGNzdGM4c2RndDkvM3cxREpVeSI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkVjluQVViYUZITzNEMlZsQmh6VUZ6ZWEvekRoMlVhMUoyQzBjc3RjOHNkZ3Q5LzN3MURKVXkiO30=', 1664092740);
+('AqIYRdhVgh5cFrMTrJU1aPdLctDb4dnYJyGRxzDR', NULL, '89.104.111.10', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiWlVEMXhNQlJmRGFPQzQ4WDQ1S1FrbmN2QkZOdE5IWUZaTlU0YU5aZCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjA6Imh0dHBzOi8vbG90dXNpbnQueHl6Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1662422821),
+('WbUsIGSBI66v5ffCYuSpbaQorfZqLBnpxrj8xuyI', NULL, '51.222.253.2', 'Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRUpEWUs5R2Y0clRndTJsSmV0bHAwMEoyV0MxSXJMeDdDQnRYRVE0VyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjQ6Imh0dHBzOi8vd3d3LmxvdHVzaW50Lnh5eiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1662432231);
 
 -- --------------------------------------------------------
 
@@ -2458,7 +2442,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'Lotus International', 'lotusinternational78@gmail.com', NULL, '$2y$10$V9nAUbaFHO3D2VlBhzUFzea/zDh2Ua1J2C0cstc8sdgt9/3w1DJUy', NULL, NULL, NULL, NULL, NULL, '2021-09-25 06:25:59', '2022-04-07 17:39:07');
+(1, 'Lotus International', 'lotusinternational77@gmail.com', NULL, '$2y$10$/fd3wJ0lLZEGwEDvvnZUierFJBjq5Ekj5/yClZMj1VAMRzDWk4TeS', NULL, NULL, NULL, NULL, NULL, '2021-09-25 06:25:59', '2022-04-07 17:39:07');
 
 --
 -- Indexes for dumped tables
@@ -2558,13 +2542,13 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `challans`
 --
 ALTER TABLE `challans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=718;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=699;
 
 --
 -- AUTO_INCREMENT for table `challan_items`
 --
 ALTER TABLE `challan_items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=743;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=741;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -2594,13 +2578,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `sales`
 --
 ALTER TABLE `sales`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1589;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1597;
 
 --
 -- AUTO_INCREMENT for table `sale_items`
 --
 ALTER TABLE `sale_items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1887;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1907;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -2628,3 +2612,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
